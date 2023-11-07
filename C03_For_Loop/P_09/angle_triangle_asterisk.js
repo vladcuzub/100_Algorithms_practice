@@ -7,14 +7,23 @@
 // ***
 // ****
 
+// function printRightAngleTriangle(height) {
+//   for (let i = 1; i <= height; i++) {
+//     let row = ''
+//     for (let j = 1; j <= i; j++) {
+//       row += '*'
+//     }
+//     console.log(row)
+//   }
+// }
+
+// printRightAngleTriangle(4)
 function printRightAngleTriangle(height) {
   for (let i = 1; i <= height; i++) {
-    let row = ''
-    for (let j = 1; j <= i; j++) {
-      row += '*'
-    }
+    let row = '*'.repeat(i)
     console.log(row)
   }
 }
 
 printRightAngleTriangle(4)
+

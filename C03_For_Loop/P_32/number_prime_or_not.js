@@ -13,4 +13,4 @@ const NumberPrime = number => {
   return console.log(`${number} is a prime number`)
 }
 
-NumberPrime(13)
+NumberPrime(10)

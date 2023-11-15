@@ -9,16 +9,29 @@
 //   1   3   3   1
 // 1   4   6   4   1
 
-const pascalTriangle = rows => {
-  for (let i = 1; i <= rows; i++) {
-    let space = ' '.repeat(rows - i)
-    space += ' '
 
-    for (let j = 1; j <= i; j++) {
-    space += j + ' '
-  }
-  console.log(space)
+
+
+function pascalTriangle(rows) {
+  for (let i = 0; i < rows; i++) {
+    let row = ''
+
+    for (let space = rows - i; space > 0; space--) {
+      row += '  '
+    }
+
+    let c = 1
+    for (let j = 0; j <= i; j++) {
+      row += c + '   '
+      c = (c * (i - j)) / (j + 1)
+    }
+
+    console.log(row)
   }
 }
 
+
 pascalTriangle(5)
+
+
+

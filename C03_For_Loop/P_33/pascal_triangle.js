@@ -9,9 +9,6 @@
 //   1   3   3   1
 // 1   4   6   4   1
 
-
-
-
 function pascalTriangle(rows) {
   for (let i = 0; i < rows; i++) {
     let row = ''
@@ -30,8 +27,4 @@ function pascalTriangle(rows) {
   }
 }
 
-
 pascalTriangle(5)
-
-
-

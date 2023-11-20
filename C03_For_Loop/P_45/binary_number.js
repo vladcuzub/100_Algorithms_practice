@@ -3,4 +3,4 @@
 // Input the binary number :1010100
 // Expected Output :
 // The Binary Number : 1010100
-The equivalent Decimal Number is : 84
+// The equivalent Decimal Number is : 84

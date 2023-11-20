@@ -4,19 +4,22 @@
 // Expected Output :
 // 121 is a palindrome number.
 
-function reverseNumber(number) {
-  let reversedNumber = 0
+const palindromeNumber = number => {
+  let originalNumber = number
+  let reverseNumber = 0
+  let restNumber = 0
 
-  while (number !== 0) {
-    reversedNumber = reversedNumber * 10 + (number % 10)
+  while (number != 0) {
+    restNumber = number % 10
+    reverseNumber = reverseNumber * 10 + restNumber
+
+    number = Math.floor(number / 10)
   }
-
-  return reversedNumber
+  if (originalNumber == reverseNumber) {
+    console.log(`${originalNumber} is a palindrome number`)
+  } else {
+    console.log(`${originalNumber} is not palindrome number`)
+  }
 }
 
-// Example usage:
-let originalNumber = 122
-let reversed = reverseNumber(originalNumber)
-
-console.log(`Original number: ${originalNumber}`)
-console.log(`Reversed number: ${reversed}`)
+palindromeNumber(121)

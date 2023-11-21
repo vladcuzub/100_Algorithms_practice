@@ -6,8 +6,8 @@
 // HCF of 24 and 28 is : 4
 
 const highestCommonFactor = (firstNumber, secondNumber) => {
-  let hcf
-  let smallNumber = firstNumber < secondNumber ? firstNumber : secondNumber
+  let hcf;
+  let smallNumber = firstNumber < secondNumber ? firstNumber : secondNumber;
 
   for (let i = 1; i <= secondNumber; i++) {
     if (firstNumber % i === 0 && secondNumber % i === 0) {

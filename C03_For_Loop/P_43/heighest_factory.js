@@ -16,5 +16,4 @@ const highestCommonFactor = (firstNumber, secondNumber) => {
   }
   console.log(hcf)
 }
-
 highestCommonFactor(24, 28)

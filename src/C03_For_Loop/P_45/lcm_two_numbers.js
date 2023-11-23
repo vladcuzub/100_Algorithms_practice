@@ -17,5 +17,5 @@ while(true) {
 console.log(`The LCM of ${firstNumber} and ${secondnumber} is : ${hightNumber}`)
 }
 
-lcmNumber(15, 20)
+lcmNumber(8, 6)
 

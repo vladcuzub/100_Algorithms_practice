@@ -5,22 +5,17 @@
 // Expected Output :
 // The LCM of 15 and 20 is : 60
 
+const lcmNumber = (firstNumber, secondnumber) => {
+  let hightNumber = Math.max(firstNumber, secondnumber)
 
-
-
-const lcmNumbers = (firstNumber,secondNumber) => {
-    let multiple = 0
-
-for(let i = 1; i <= firstNumber; i++){
-    multiple = firstNumber * i
+while(true) {
+  if(hightNumber % firstNumber === 0 && hightNumber % secondnumber === 0){
+    break
+  }
+  hightNumber++
+}
+console.log(`The LCM of ${firstNumber} and ${secondnumber} is : ${hightNumber}`)
 }
 
-for(let j = 1; j <= secondNumber;j++ ){
-    multiple = secondNumber * j
-    console.log(multiple)
-}
+lcmNumber(15, 20)
 
-
-}
-
-lcmNumbers(15,20)

@@ -29,9 +29,8 @@ const calculateElements = (array) => {
 
 const main = () => {
     const ArrayElements = inputElements();
-    const sum = calculateElements(ArrayElements)
-
-    console.log(`Sum of all elements stored in the array is : ${sum}`);
+    const sumElements = calculateElements(ArrayElements)
+    console.log(`Sum of all elements stored in the array is : ${sumElements}`);
 }
 
 main()

@@ -9,9 +9,10 @@
 // Total number of duplicate elements found in the array is: 1
 
 let array = [];
+let input
 
 const inputElements = () => {
-    let input = prompt(`Input the number of elements to be stored in the array:`)
+    input = prompt(`Input the number of elements to be stored in the array:`)
     return parseInt(input)
 }
 

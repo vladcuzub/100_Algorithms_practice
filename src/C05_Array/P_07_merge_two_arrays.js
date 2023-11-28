@@ -40,7 +40,7 @@ const mergeArrays = () => {
     let result = [...firstArray, ...secondArray]
     result.sort((a, b) => b - a);
     // result.reverse()
-    return console.log(result)
+    return console.log(`The merged array in decending order is: ${result}`)
 }
 
 

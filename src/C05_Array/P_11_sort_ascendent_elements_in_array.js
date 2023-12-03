@@ -12,24 +12,33 @@
 // 2 4 5 7 9
 
 
-let array = [];
 
-const numbersOfInput = () => {
-    let input = prompt('Input the number of elements to be stored in the array: ')
+const inputArray = () => {
+    let array = [];
+    let numberOfElements = prompt('Input the number of elements to be stored in the array: ')
 
-    for (let i = 0; i < input; i++) {
-        let numb = parseInt(prompt(`Input ${i + 1} element in the array:`));
-        array.push(numb)
+    for (let i = 0; i < numberOfElements; i++) {
+        let element = parseInt(prompt(`Input ${i + 1} element in the array:`));
+        array.push(element)
     }
-    return console.log(`Input 3 elements in the array: ${array}`)
+    console.log(`Input 3 elements in the array: ${array}`)
+    return array;
 }
 
-const sortAscendentElements = () => {
-    const ascendent = array.sort((a, b) => {
+const sortElements = (array) => {
+    return array.sort((a, b) => {
         return a - b
+       
     })
-    console.log(`Elements of array in sorted ascending order: ${ascendent}`)
 }
 
-numbersOfInput();
-sortAscendentElements()
+const sortElementsInArray = () => {
+    let array = inputArray();
+    let sortedArray = sortElements(array);
+
+    console.log(`Elements of array in sorted ascending order: ${sortedArray}`)
+
+}
+
+
+sortElementsInArray();

@@ -23,8 +23,8 @@ const elements = () => {
 
 }
 
-const sortElements = (ceva) => {
-    return ceva.sort((a, b) => {
+const sortElements = (array) => {
+    return array.sort((a, b) => {
         return b - a
     })
 }

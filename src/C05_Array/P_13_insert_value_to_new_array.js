@@ -17,41 +17,60 @@
 
 
 const addElementsInArray = () => {
-    let array = []
+    let array = [];
     let numberElements = prompt('Input the size of array:');
+
+    if (!numberElements || isNaN(numberElements)) {
+        alert("You must enter a valid number of elements");
+        return array;
+    }
 
     for (let i = 0; i < numberElements; i++) {
         let inputValue = parseInt(prompt(`Input ${i + 1} elements in the array in ascending order:`));
-        array.push(inputValue);
+
+
+        if (!isNaN(inputValue)) {
+            array.push(inputValue);
+        } else {
+            alert("Invalid input. Please enter a valid number.");
+            return array;
+        }
     }
-    console.log(`The exist array list is: ${array}`)
-    return array
+
+    console.log(`The existing array list is: ${array}`);
+    return array;
 }
 
 const addNewElementToArray = (array) => {
     let newValue = parseInt(prompt(`Input the value to be inserted: `));
+
+
+    if (!isNaN(newValue)) {
     let index = 0;
 
-    while (index < array.length && array[index] < newValue) {
+        while (index < array.length && array[index] < newValue) {
         index++;
-    }
-    array.splice(index, 0, newValue);
+        }
+        array.splice(index, 0, newValue);
 
-    console.log(`After Insert the list is: ${array}`)
-    return array
+        console.log(`After Insert the list is: ${array}`);
+        return array;
+    } else {
+        alert("Invalid input. Please enter a valid number.");
+        return array;
+    }
 }
 
 const sortArray = (array) => {
     return array.sort((a, b) => {
-        return a - b
-    })
+        return a - b;
+    });
 }
 
 const sortedArray = () => {
-    const array = addElementsInArray()
-    const sorted = sortArray(array)
-    const newArray = addNewElementToArray(sorted)
-
+    const array = addElementsInArray();
+    const sorted = sortArray(array);
+    const newArray = addNewElementToArray(sorted);
 }
 
-sortedArray()
+sortedArray();

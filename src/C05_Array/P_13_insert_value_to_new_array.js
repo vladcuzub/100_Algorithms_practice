@@ -17,7 +17,6 @@
 
 
 const addElementsInArray = () => {
-
     let array = []
     let numberElements = prompt('Input the size of array:');
 
@@ -25,7 +24,20 @@ const addElementsInArray = () => {
         let inputValue = parseInt(prompt(`Input ${i + 1} elements in the array in ascending order:`));
         array.push(inputValue);
     }
-    console.log(`The array are: ${array}`)
+    console.log(`The exist array list is: ${array}`)
+    return array
+}
+
+const addNewElementToArray = (array) => {
+    let newValue = parseInt(prompt(`Input the value to be inserted: `));
+    let index = 0;
+
+    while (index < array.length && array[index] < newValue) {
+        index++;
+    }
+    array.splice(index, 0, newValue);
+
+    console.log(`After Insert the list is: ${array}`)
     return array
 }
 
@@ -35,15 +47,11 @@ const sortArray = (array) => {
     })
 }
 
-
 const sortedArray = () => {
     const array = addElementsInArray()
     const sorted = sortArray(array)
-
-    console.log(`Elements of the array in sorted asccendent order: ${sorted}`)
+    const newArray = addNewElementToArray(sorted)
 
 }
-
-
 
 sortedArray()

@@ -28,7 +28,6 @@ const addElementsInArray = () => {
     for (let i = 0; i < numberElements; i++) {
         let inputValue = parseInt(prompt(`Input ${i + 1} elements in the array in ascending order:`));
 
-
         if (!isNaN(inputValue)) {
             array.push(inputValue);
         } else {
@@ -43,7 +42,6 @@ const addElementsInArray = () => {
 
 const addNewElementToArray = (array) => {
     let newValue = parseInt(prompt(`Input the value to be inserted: `));
-
 
     if (!isNaN(newValue)) {
     let index = 0;

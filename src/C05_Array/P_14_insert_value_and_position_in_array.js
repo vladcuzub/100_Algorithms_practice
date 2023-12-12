@@ -15,10 +15,7 @@
 // 1 5 8 7 10
 
 
-
-
-
-function readArray() {
+const readArray = () => {
     let array = [];
     const inputSize = parseInt(prompt("Input the size of array: "));
     for (let i = 0; i < inputSize; i++) {
@@ -36,31 +33,26 @@ const insertNewValueAtPosition = (array, newValue, position) => {
 
     let newArray = [];
 
-    for (let i = 0; i < position; i++) {
+    for (let i = 0; i < position - 1; i++) {
         newArray[i] = array[i];
     }
+    newArray[position - 1] = newValue;
 
-    newArray[position] = newValue;
-
-    for (let i = position; i < array.length; i++) {
+    for (let i = position - 1; i < array.length; i++) {
         newArray[i + 1] = array[i];
     }
 
     return newArray;
 }
 
-function main() {
+const main = () => {
     let myArray = readArray();
     let newValue = parseInt(prompt("Input the value to be inserted: "));
     let position = parseInt(prompt("Input the Position, where the value to be inserted: "));
-
     let result = insertNewValueAtPosition(myArray, newValue, position);
 
-    console.log("The current list of the array:");
-    console.log(myArray.join(" "));
-
-    console.log("After Insert the element the new list is:");
-    console.log(result.join(" "));
+    console.log(`The current list of the array: ${myArray}`);
+    console.log(`After Insert the element the new list is: ${result}`);
 }
 
 main();

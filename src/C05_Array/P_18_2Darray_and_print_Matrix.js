@@ -29,7 +29,6 @@ const readArray = () => {
             row[j] = element
         }
         matrixArray[i] = row
-
     }
     return matrixArray
 }
@@ -45,7 +44,6 @@ const main = () => {
         }
         console.log(rowSpace)
     }
-
 }
 
 main()

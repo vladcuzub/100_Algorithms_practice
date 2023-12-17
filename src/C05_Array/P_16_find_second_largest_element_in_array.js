@@ -23,7 +23,7 @@ const readArray = () => {
 }
 
 
-const findSecondLargestElementInArray = () => {
+const findSecondLargestElementInArray = (array) => {
     let largestElement = array[0];
     let secondLargestElement = array[1];
 
@@ -35,11 +35,17 @@ const findSecondLargestElementInArray = () => {
             secondLargestElement = array[i];
         }
     }
+    return secondLargestElement
+    
+}
+
+const main = () => {
+    const array = readArray()
+    const secondLargestElement = findSecondLargestElementInArray(array)
     console.log(`The Second largest element in the array is: ${secondLargestElement}`);
 }
 
-const array = readArray()
-findSecondLargestElementInArray(array)
+main();
 
 
 

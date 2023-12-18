@@ -25,20 +25,59 @@ The Addition of two matrix is:
 6 8
 10 12 */
 
-const readSquare = (size) => {
-    let array = [];
-    let inputSizeSquare = parseInt(prompt('Input the size of the square matrix(less than 5): '))
+const readSquare = (size, title) => {
+    let matrix = [];
 
-    for (let i = 0; i < inputSizeSquare; i++) {
+    for (let i = 0; i < size; i++) {
         let row = []
-        for (let j = 0; j < inputSizeSquare; j++) {
-            let element = parseInt(prompt('Input elements in the first matrix: '))
-            row[i] = element
+        for (let j = 0; j < size; j++) {
+            let element = parseInt(prompt(`Input elements in the ${title} matrix: `))
+            row[j] = element
         }
-        array[i] = row
+        matrix[i] = row
     }
-   return array
+
+    return matrix
+}
+
+const addMatrices = (firstMatrix, secondMatrix) => {
+    const result = []
+
+    for (let i = 0; i < firstMatrix.length; i++) {
+        let row = [];
+        for (let j = 0; j < firstMatrix[i].length; j++) {
+            row[j] = firstMatrix[i][j] + secondMatrix[i][j];
+        }
+        result[i] = row
+    }
+    return result
 
 }
 
-readSquare()
+const displayMatrix = (matrix, title) => {
+    console.log(`${title} matrix is:`);
+    for (let i = 0; i < matrix.length; i++) {
+        let rowSpace = ' ';
+        for (let j = 0; j < matrix[i].length; j++) {
+            rowSpace += `${matrix[i][j]} `;
+        }
+        console.log(`${rowSpace}`);
+    }
+}
+
+
+const main = () => {
+    let inputSizeSquare = parseInt(prompt('Input the size of the square matrix(less than 5): '))
+
+    const firstMatrix = readSquare(inputSizeSquare, 'first')
+    const secondMatrix = readSquare(inputSizeSquare, 'second')
+
+    displayMatrix(firstMatrix, 'The first')
+    displayMatrix(secondMatrix, ' The second')
+
+    const result = addMatrices(firstMatrix, secondMatrix)
+
+    displayMatrix(result, 'The Addition of two ')
+
+}
+main()

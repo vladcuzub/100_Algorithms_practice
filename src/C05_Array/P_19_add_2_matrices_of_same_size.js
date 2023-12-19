@@ -36,7 +36,6 @@ const readSquare = (size, title) => {
         }
         matrix[i] = row
     }
-
     return matrix
 }
 
@@ -51,7 +50,6 @@ const addMatrices = (firstMatrix, secondMatrix) => {
         result[i] = row
     }
     return result
-
 }
 
 const displayMatrix = (matrix, title) => {

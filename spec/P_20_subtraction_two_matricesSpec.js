@@ -1,11 +1,27 @@
 describe('P_20_subtraction_of_two_matrice', function () {
     it('input size of square matrix to be less then 5', function () {
-        let size = 0
+        let size = 4
     
         let result = readArray(size)
 
+        expect(result).toBe('Input elements in the first matrix :')
+    })
 
-        expect(result).toBe(5)
+    it('input size of square matrix is bigger or equal to 5', function () {
+        let size = 5
+
+        let result = readArray(size)
+
+
+        expect(result).toBe('The square matrix must be less than 5')
+    })
+    it('input size of square matrix is undefined', function () {
+        let size 
+
+        let result = readArray(size)
+
+
+        expect(result).toBe('The square matrix must be less than 5')
     })
 
 

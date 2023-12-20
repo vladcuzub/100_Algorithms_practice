@@ -27,13 +27,13 @@ The Subtraction of two matrix is :
 
 const readArray = (size) => {
     let result 
-    if (size === 0) {
+    if (size >= 5 || size == undefined) {
        result = 'The square matrix must be less than 5'
     } else {
-        result = 'The square matrix must be less than 5'
+        result = 'Input elements in the first matrix :'
     }
     return result
 }
 
 
-readArray(5)
+readArray()

@@ -25,14 +25,27 @@ The Subtraction of two matrix is :
 4 4
 4 4 */
 
-const readArray = (size) => {
+const readArray = (size,matrix) => {
     let result 
+    let input
+
     if (size >= 5 || size == undefined) {
        result = 'The square matrix must be less than 5'
     } else {
         result = 'Input elements in the first matrix :'
     }
-    return result
+
+    if (size && matrix) {
+        for (let i = 0; i < size; i++) {
+            let row = [];
+            for (let j = 0; j < size; j++) {
+                row[j] = matrix[i][j];
+            }
+            matrix[i] = row;
+        }
+    }
+
+    return matrix || result
 }
 
 

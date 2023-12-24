@@ -25,12 +25,11 @@ The Subtraction of two matrix is :
 4 4
 4 4 */
 
-const readArray = (size,matrix) => {
-    let result 
-    let input
+const readArray = (size, matrix) => {
+    let result
 
     if (size >= 5 || size == undefined) {
-       result = 'The square matrix must be less than 5'
+        result = 'The square matrix must be less than 5'
     } else {
         result = 'Input elements in the first matrix :'
     }
@@ -44,9 +43,50 @@ const readArray = (size,matrix) => {
             matrix[i] = row;
         }
     }
-
     return matrix || result
 }
 
+const subtractionMatrices = (firstMatrix, secondMatrix) => {
+    const substractionResult = []
 
-readArray()
+    for (let i = 0; i < firstMatrix.length; i++) {
+        let row = [];
+        for (let j = 0; j < firstMatrix[i].length; j++) {
+            row[j] = firstMatrix[i][j] - secondMatrix[i][j]
+        }
+        substractionResult[i] = row
+    }
+    return substractionResult
+}
+
+const displayMatrix = (matrix, title) => {
+    console.log(title);
+    for (let i = 0; i < matrix.length; i++) {
+        let rowSpace = ' ';
+        for (let j = 0; j < matrix[i].length; j++) {
+            rowSpace += `${matrix[i][j]} `;
+        }
+        console.log(`${rowSpace}`)
+
+    }
+}
+
+const main = () => {
+    let size = 2
+    let matrix
+    let firstMatrix = [[5, 6], [7, 8]]
+    let secondMatrix = [[1, 2], [3, 4]]
+
+    matrix = readArray(size, matrix)
+    let substaction = subtractionMatrices(firstMatrix, secondMatrix)
+
+    let showFirstMatrix = displayMatrix(firstMatrix, 'This is the first Matrix : ')
+    let showSecondMatrix = displayMatrix(secondMatrix, 'This is the second Matrix :')
+
+    let substactionOfTwoMatrix = displayMatrix(substaction, 'he Subtraction of two matrix is :')
+
+    console.log(showFirstMatrix)
+    console.log(showSecondMatrix)
+    console.log(substactionOfTwoMatrix)
+}
+main()

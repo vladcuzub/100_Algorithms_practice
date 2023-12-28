@@ -41,6 +41,4 @@ describe('P_20_subtraction_of_two_matrice', function () {
         expect(result).toEqual([[4,4],[4,4]])
     }) 
   
-
-
 })

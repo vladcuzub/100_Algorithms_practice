@@ -17,22 +17,56 @@ The transpose of a matrix is :
 2 4 */
 
 
-const readInputMatrix = (rows,columns) => {
-  let matrix = [];
-  for(let i = 0; i < rows; i++){
-    let rows = [];
-    for(let j=0;j<columns;j++)
-    rows[j] = matrix[i][j]
-  }
-  return rows
+const readInputMatrix = (rows, columns, matrix) => {
+  let resultMatrix = []
 
+  for (let i = 0; i < rows; i++) {
+    let row = []
+    for (let j = 0; j < columns; j++) {
+      row[j] = matrix[i][j]
+    }
+    resultMatrix[i] = row
+  }
+  return resultMatrix
 }
 
-readInputMatrix(2,2)
+const transposeMatrix = (matrix) => {
+  const rows = matrix.length
+  const columns = matrix[0].length
+  const resultTransposeMatrix = []
 
-/* 
-1 2
-3 4
+  for (let i = 0; i < columns; i++) {
+    resultTransposeMatrix[i] = []
+    for (let j = 0; j < rows; j++) {
+      resultTransposeMatrix[i][j] = matrix[j][i]
+    }
+  }
+  return resultTransposeMatrix
+}
 
 
-*/
+const displayMatrix = (matrix) => {
+  for (let i = 0; i < matrix.length; i++) {
+    let space = ' '
+    for (let j = 0; j < matrix[i].length; j++) {
+      space += `${matrix[i][j]} `;
+    }
+    console.log(`${space}`)
+  }
+}
+
+const main = () => {
+  const inputMatrix = [
+    [1, 5],
+    [3, 8],
+  ];
+
+  const transposedMatrix = transposeMatrix(inputMatrix);
+
+  console.log('The matrix is :')
+  displayMatrix(inputMatrix);
+  console.log('\nTransposed matrix is:');
+  displayMatrix(transposedMatrix);
+}
+
+main()

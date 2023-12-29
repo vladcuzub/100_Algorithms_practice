@@ -82,7 +82,6 @@ const main = () => {
 
     let showFirstMatrix = displayMatrix(firstMatrix, 'This is the first Matrix : ')
     let showSecondMatrix = displayMatrix(secondMatrix, 'This is the second Matrix :')
-
     let substactionOfTwoMatrix = displayMatrix(substaction, 'he Subtraction of two matrix is :')
 
     console.log(showFirstMatrix)

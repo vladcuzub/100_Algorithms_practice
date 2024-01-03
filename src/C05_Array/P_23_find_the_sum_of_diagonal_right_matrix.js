@@ -27,6 +27,23 @@ const readInputMatrix = (sizeMatrix, matrixElements) => {
     return matrix;
 }
 
+const sumRightDiagonals = (matrix) => {
+
+    let sum = 0;
+
+    for (let i = 0; i < matrix.length; i++) {
+        sum += matrix[i][i];
+    }
+    return sum;
+}
+
+
+const main = () => {
+    const myMatrix = readInputMatrix(2, [[1, 6], [2, 4]])
+    const sumOfMatrix = sumRightDiagonals(myMatrix)
+}
+
+main()
 
 
 

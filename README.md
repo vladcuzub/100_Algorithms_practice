@@ -14,3 +14,11 @@
 - Interactive: Actively engage by attempting problems in both C and JavaScript to grasp language-specific nuances.
 
 
+## Algorithm Problems List:
+
+ 1. Declarations and Expressions
+ 
+    - Print Name,Birthday,Mobilephone
+    - Perimeter and Area of a Rectangle
+    - Area and Perimeter of Circle
+    - 

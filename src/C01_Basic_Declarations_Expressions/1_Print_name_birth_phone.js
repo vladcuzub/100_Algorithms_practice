@@ -3,14 +3,20 @@
 
 // Name : Alexandra Abramov
 // DOB : July 14,
-// 1975 Mobile : 99 - 9999999999
+//  Mobile : 99 - 9999999999
 
-#include <stdio.h>
 
-int main()
-{
-  printf("Name: Vlad Cuzub \n");
-  printf("DOB: Febr 14, 1989\n");
-  printf("Mobile: 1231-2312 \n");
-  return 0;
-}
+
+let name = 'Vlad Alexandru';
+let birthday = '18 Febr 1989';
+let mobile = '2123123- 3123';
+
+console.log(`Name: ${name}`)
+console.log(`Birthday: ${birthday}`)
+console.log(`Mobile: ${mobile}`)
+
+
+
+
+
+

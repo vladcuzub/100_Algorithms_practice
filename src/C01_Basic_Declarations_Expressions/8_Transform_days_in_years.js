@@ -2,20 +2,23 @@
 // Note : Ignore leap year.
 // Test Data : Number of days : 1329 Expected Output : Years : 3 Weeks : 33 Days : 3
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main()
-{
-  int inputDays, years, weeks, restDays;
 
-  inputDays = 1329;
-  years = inputDays / 365;
-  weeks = (inputDays % 365) / 7;
-  restDays = inputDays - ((years * 365) + (weeks * 7));
+function convertDays(inputDays) {
+  let daysInYear = 365;
+  let daysInWeek = 7;
 
-  printf("Years :%d \n", years);
-  printf("Weeks :%d \n", weeks);
-  printf("Days :%d \n", restDays);
+  let years = inputDays / daysInYear
+  let remainingDays = inputDays % daysInYear;
+  let weeks = remainingDays / daysInWeek
 
-  return 0;
+  let restDays = remainingDays % daysInWeek;
+
+  console.log("Years: " + years + " Weeks: " + weeks + " Days: " + restDays);
+
+  return
 }
+
+convertDays(1329)
+

@@ -21,4 +21,5 @@
     - Print Name,Birthday,Mobilephone
     - Perimeter and Area of a Rectangle
     - Area and Perimeter of Circle
+    - Display differit Variables
     - 

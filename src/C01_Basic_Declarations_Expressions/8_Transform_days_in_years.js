@@ -14,7 +14,6 @@ function convertDays(inputDays) {
   let weeks = remainingDays / daysInWeek
 
   let restDays = remainingDays % daysInWeek;
-
   console.log("Years: " + years + " Weeks: " + weeks + " Days: " + restDays);
 
   return

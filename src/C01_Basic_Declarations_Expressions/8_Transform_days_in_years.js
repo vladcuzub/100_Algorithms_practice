@@ -16,8 +16,13 @@ function convertDays(inputDays) {
   let restDays = remainingDays % daysInWeek;
   console.log("Years: " + years + " Weeks: " + weeks + " Days: " + restDays);
 
-  return
+  return {
+    years: years,
+      weeks: weeks,
+        days: restDays
+  };
 }
 
-convertDays(1329)
+console.log(convertDays(1329));
+
 

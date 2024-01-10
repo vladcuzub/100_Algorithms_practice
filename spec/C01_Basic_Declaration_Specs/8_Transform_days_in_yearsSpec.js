@@ -19,12 +19,9 @@ describe('Convert specified days into years, weeks and days without leap year.',
 
 
     it('RestDays is subtracting the total days accounted for by years and weeks from the total inputDays', function () {
-        let inputDays = 1329;
-        let weeksResult = 33
-        let yearsResult = 3.6
-
-
-        let restDays = calculateRestDays(inputDays, weeksResult, yearsResult)
+        let remainingDays = 234
+   
+        let restDays = calculateRestDays(remainingDays)
 
         expect(restDays).toBe(3)
     })

@@ -23,3 +23,4 @@
     - Area and Perimeter of Circle
     - Display differit Variables
     - Convert some days in Years,weeks and restdays
+    - Calculate two integers numbers

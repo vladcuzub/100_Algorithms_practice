@@ -5,7 +5,7 @@ describe('Calculate Salary after total worked hours in a month and the amount he
         let workedHours = 8;
         let salaryPerHour = 15000;
 
-        let salaryResult = salaryPerMonth(employeeId, workedHours, salaryPerHour)
+        let salaryResult = salaryPerMonth( workedHours, salaryPerHour)
 
         expect(salaryResult).toBe(120000.00)
     })

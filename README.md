@@ -26,3 +26,4 @@
     - Calculate two integers numbers
     - Calculate product of 2 integers
     - Calculate MonthSalary of a employer
+    - Find Max of three numbers

@@ -6,4 +6,3 @@ function salaryPerMonth(workedHours, salaryPerHour) {
   let resultSalary = workedHours * salaryPerHour
   return  parseInt(resultSalary.toFixed(2))
 }
-console.log(salaryPerMonth(8,15000))

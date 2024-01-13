@@ -8,9 +8,10 @@
 // Distance between the said points: 11.1803
 
 
-function distanceOfTwoPoints (x1,x2,y1,y2) {
-  let distance = ((x2 - x1) ** 2) + ((y2 - y1) ** 2)
-  return distance;
+function distanceOfTwoPoints(x1, y1, x2, y2) {
+  const squaredDistance = ((x2 - x1) ** 2) + ((y2 - y1) ** 2);
+  const distance = Math.sqrt(squaredDistance);
+  return parseFloat(distance.toFixed(4));
 }
 console.log(distanceOfTwoPoints(25,15,35,10))
 

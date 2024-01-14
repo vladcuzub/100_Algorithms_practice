@@ -5,14 +5,12 @@
 // Expected Output:
 // Multiplied!
 
-let x = parseInt(prompt("Add first number"));
-let y = parseInt(prompt('Add second number'));
 
-if (x % y === 0 || y % x === 0) {
-  console.log('Multiplied')
-} else {
-  console.log('Not multiplied')
+function multipledNumber(x, y) {
+  if (x % y == 0 || y % x == 0) {
+    return "Multiplied!"
+  } else {
+    return "Not multiplied"
+  }
 }
-
-
 

@@ -7,7 +7,7 @@ describe('Calculate distance of two points', function () {
         let x2 = 35;
         let y2 = 10;
 
-        let resultDistanceOfTwoPoints = disTanceOfTwoPoints(x1,y1,x2,y2)
+        let resultDistanceOfTwoPoints = distanceOfTwoPoints(x1,y1,x2,y2)
 
         expect(resultDistanceOfTwoPoints).toBe(11.1803)
     })

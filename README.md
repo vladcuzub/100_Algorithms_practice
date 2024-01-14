@@ -27,3 +27,5 @@
     - Calculate product of 2 integers
     - Calculate MonthSalary of a employer
     - Find Max of three numbers
+    - Distance of two points
+    - Calculate Sum of odds numbers

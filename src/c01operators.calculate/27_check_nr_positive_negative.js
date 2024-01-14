@@ -9,16 +9,25 @@
 // Number of positive numbers: 3
 // Number of negative numbers: 2
 
-let positiveNr = 0
-let negativeNr = 0
 
-for (i = 0; i < 5; i++) {
-  let inputNr = parseInt(prompt('Input a number:'))
-  if (inputNr > 0) {
-    positiveNr++
-  } else if (inputNr < 0) {
-    negativeNr++
-  }
+function countPositivNumbers(numbers) {
+    let positiveNumbers = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > 0) {
+            positiveNumbers++;
+        }
+    }
+    return positiveNumbers
 }
-console.log(`Sum of positive numbers: ${positiveNr}`)
-console.log(`Sum of negative numbers: ${negativeNr}`)
+
+function countNegativeNumbers(numbers) {
+    let negativeNumbers = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] < 0) {
+            negativeNumbers++;
+        }
+    }
+    return negativeNumbers
+}

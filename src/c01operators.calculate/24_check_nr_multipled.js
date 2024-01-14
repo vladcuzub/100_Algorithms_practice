@@ -10,7 +10,7 @@ function multipledNumber(x, y) {
   if (x % y == 0 || y % x == 0) {
     return "Multiplied!"
   } else {
-    return "Not multiplied"
+    return "Not multiplied!"
   }
 }
 

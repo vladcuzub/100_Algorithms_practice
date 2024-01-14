@@ -29,3 +29,5 @@
     - Find Max of three numbers
     - Distance of two points
     - Calculate Sum of odds numbers
+    - Check numbers whether they are multiplied or not
+    - 

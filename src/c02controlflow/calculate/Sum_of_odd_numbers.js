@@ -1,4 +1,4 @@
-// Write a C program that reads 5 numbers and sums all odd values between them.
+// Write a program that reads 5 numbers and sums all odd values between them.
 // Test Data :
 // Input the first number: 11
 // Input the second number: 17

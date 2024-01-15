@@ -1,4 +1,4 @@
-// Write a C program to calculate the distance between two points.
+// Write a program to calculate the distance between two points.
 // Test Data :
 // Input x1: 25
 // Input y1: 15

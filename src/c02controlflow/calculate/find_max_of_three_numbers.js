@@ -1,4 +1,4 @@
-// Write a C program that accepts three integers and finds the maximum of three.
+// Write a program that accepts three integers and finds the maximum of three.
 // Test Data :
 // Input the first integer: 25
 // Input the second integer: 35

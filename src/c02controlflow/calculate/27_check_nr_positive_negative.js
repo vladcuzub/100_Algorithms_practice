@@ -1,4 +1,4 @@
-// Write a C program that reads 5 numbers and counts the number of positive numbers and negative numbers.
+// Write a program that reads 5 numbers and counts the number of positive numbers and negative numbers.
 // Test Data :
 // Input the first number: 5
 // Input the second number: -4

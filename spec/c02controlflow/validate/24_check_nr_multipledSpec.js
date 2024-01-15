@@ -4,17 +4,17 @@ describe('Checks whether they are multiplied or not', function () {
         let x = 10;
         let y = 2
 
-        let result = multipledNumber(x,y)
+        let result = multipliedNumber(x,y)
 
-        expect(result).toBe('Multiplied!')
+        expect(result).toBe(true)
     })
     it('The division result should  give a remainder', function () {
         let x = 10;
         let y = 3
 
-        let result = multipledNumber(x, y)
+        let result = multipliedNumber(x, y)
 
-        expect(result).toBe('Not multiplied!')
+        expect(result).toBe(false)
     })
 
 })

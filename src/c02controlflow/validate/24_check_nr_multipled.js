@@ -6,11 +6,11 @@
 // Multiplied!
 
 
-function multipledNumber(x, y) {
+function multipliedNumber(x, y) {
   if (x % y == 0 || y % x == 0) {
-    return "Multiplied!"
+    return true
   } else {
-    return "Not multiplied!"
+    return false
   }
 }
 

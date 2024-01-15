@@ -10,13 +10,13 @@
 
 
 function calculateSumOddsNumbers(numbers) {
-let sum = 0;
+    let sum = 0;
 
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 1) {
-      sum += numbers[i];
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 1) {
+            sum += numbers[i];
+        }
     }
-  }
 
-  return sum;
+    return sum;
 }

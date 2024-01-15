@@ -1,4 +1,4 @@
-// #Write a C program to convert specified days into years, weeks and days.
+// Write a program to convert specified days into years, weeks and days.
 // Note : Ignore leap year.
 // Test Data : Number of days : 1329 Expected Output : Years : 3 Weeks : 33 Days : 3
 
@@ -23,8 +23,3 @@ function calculateRestDays(remainingDays) {
   let restDays = remainingDays % daysInWeek;
   return restDays
 }
-
-
-console.log(calculateYears(1329))
-console.log(calculateWeeks(1329))
-console.log(calculateRestDays(234))

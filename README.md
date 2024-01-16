@@ -30,4 +30,4 @@
     - Distance of two points
     - Calculate Sum of odds numbers
     - Check numbers whether they are multiplied or not
-    - 
+    - Check if a number is divisible to 3 or 7 or both

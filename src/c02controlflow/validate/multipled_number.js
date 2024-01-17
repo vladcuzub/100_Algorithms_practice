@@ -5,15 +5,11 @@
 // 1
 // 0
 
-
 function multipleNumber(inputNumber) {
-  if (inputNumber % 3 === 0 && inputNumber % 7 === 0) {
-    return false
-  }
-  else if (inputNumber % 3 === 0 || inputNumber % 7 === 0) {
-    return true
-  }
-  else {
-    return false
+  if ((inputNumber % 3 === 0 || inputNumber % 7 === 0) && !(inputNumber % 3 === 0 && inputNumber % 7 === 0)) {
+    return true;
+  } else {
+    return false;
   }
 }
+

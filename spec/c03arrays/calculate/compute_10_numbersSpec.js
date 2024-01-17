@@ -6,6 +6,4 @@ describe('Compute the sum of the first 10 natural numbers', function () {
 
         expect(result).toBe(55)
     })
-
-
 })

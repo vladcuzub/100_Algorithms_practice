@@ -1,4 +1,4 @@
-//  Write a program in C to display the cube of the number up to an integer.
+//  Write a program to display the cube of the number up to an integer.
 // Test Data :
 // Input number of terms : 5
 // Expected Output :
@@ -8,10 +8,11 @@
 // Number is : 4 and cube of the 4 is :64
 // Number is : 5 and cube of the 5 is :125
 
-const calculateCubeNumber = number => {
-  for (let i = 1; i <= number; i++) {
-   let cubeNumber = i * i * i
-    console.log(`Number is: ${i} and cube of the ${i} is ${cubeNumber}`)
+
+function cubeOfNumber(inputNumbers) {
+  let cube = 0
+  for (let i = 1; i <= inputNumbers; i++) {
+    cube = i * i * i
   }
+  return cube
 }
-calculateCubeNumber(5)

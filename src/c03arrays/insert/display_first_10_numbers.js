@@ -4,12 +4,12 @@
 
 
 function displayFirst10Numbers() {
-  const result = [];
+  const naturalNumbers = [];
 
   for (let i = 1; i <= 10; i++) {
-    result[i - 1] = i;
+    naturalNumbers[i - 1] = i;
   }
 
-  return result;
+  return naturalNumbers;
 }
 

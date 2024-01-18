@@ -1,6 +1,6 @@
 describe('Display the multiplication table for a given integer', function () {
 
-    it('the input number should multiplay with each number from loop', function () {
+    it('The input number should multiplay with each number from loop', function () {
         let inputNumber = 15
 
         let result = multiplicationTable(inputNumber)

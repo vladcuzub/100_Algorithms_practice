@@ -7,16 +7,15 @@
 // ...
 // 1x10 = 10, 2x10 = 20, 3x10 = 30, 4x10 = 40, 5x10 = 50, 6x10 = 60, 7x10 = 70, 8x10 = 80
 
-function multiplierTable(inputNumber){
-  let table = ''
+function multiplierTable(inputNumber) {
+  let table ='';
 
   for (let i = 1; i <= 10; i++) {
-   
     for (let j = 1; j <= inputNumber; j++) {
-      const result = i * j
-      table += `${j}x${i} = ${result}, `
+      const result = i * j;
+      table += `${j}x${i} = ${result},`;
     }
+    table += '\n';
   }
-  return table
+  return table;
 }
-

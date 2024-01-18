@@ -1,4 +1,4 @@
-describe('read 10 numbers from the keyboard and find their sum and average.', function () {
+describe('Read 10 numbers from the keyboard and find their sum and average.', function () {
 
     it('the sum should be the sum of all the numbers', function () {
         let inputNumbers = 10

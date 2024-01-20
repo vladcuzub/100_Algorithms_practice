@@ -31,3 +31,6 @@ function countNegativeNumbers(numbers) {
     }
     return negativeNumbers
 }
+
+module.exports.countPositivNumbers = countPositivNumbers
+module.exports.countNegativeNumbers = countNegativeNumbers

@@ -15,3 +15,6 @@ function perimeterRectangle(height, width) {
   
   return perimeter
 }
+
+module.exports.areaRectangle = areaRectangle
+module.exports.perimeterRectangle = perimeterRectangle

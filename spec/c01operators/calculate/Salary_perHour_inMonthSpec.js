@@ -1,3 +1,4 @@
+const salaryPerMonth = require('../../../src/c01operators/calculate/Salary_perHour_inMonth')
 
 describe('Calculate Salary after total worked hours in a month and the amount he received per hour', function () {
 

@@ -1,3 +1,5 @@
+const distanceOfTwoPoints = require('../../../src/c01operators/calculate/Distance_between_2points')
+
 describe('Calculate distance of two points', function () {
 
     it('distance of two points is the sum of squard diferences of x and y', function () {

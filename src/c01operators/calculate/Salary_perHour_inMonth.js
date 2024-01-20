@@ -6,3 +6,5 @@ function salaryPerMonth(workedHours, salaryPerHour) {
   let resultSalary = workedHours * salaryPerHour
   return  parseInt(resultSalary.toFixed(2))
 }
+
+module.exports = salaryPerMonth

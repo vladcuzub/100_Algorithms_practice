@@ -18,3 +18,6 @@ function areaOfCircle(radius) {
 
   return area
 }
+
+module.exports.perimeterOfCircle = perimeterOfCircle
+module.exports.areaOfCircle = areaOfCircle

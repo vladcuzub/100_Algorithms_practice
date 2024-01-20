@@ -3,5 +3,8 @@
 
 function productOfNumbers(firstNumber,secondNumber) {
   let product = firstNumber*secondNumber;
+
   return product
 }
+
+module.exports = productOfNumbers

@@ -1,3 +1,5 @@
+const cubeOfNumber = require('../../../src/c03arrays/calculate/cube_number')
+
 describe('Display the cube of the number up to an integer', function () {
 
     it('the cube should be the multiplication three time of 1', function () {

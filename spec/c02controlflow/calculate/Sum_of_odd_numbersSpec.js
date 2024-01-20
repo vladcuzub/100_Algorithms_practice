@@ -1,3 +1,5 @@
+const calculateSumOddsNumbers = require('../../../src/c02controlflow/calculate/Sum_of_odd_numbers')
+
 describe('Calculate sums all odd values between them', function () {
 
     it('should find the odds numbers and adding them', function () {

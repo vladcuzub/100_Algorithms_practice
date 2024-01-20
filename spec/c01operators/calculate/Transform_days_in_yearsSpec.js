@@ -1,4 +1,4 @@
-const transformDays = require('../../../src/c01operators/Transform_days_in_years.js')
+const transformDays = require('../../../src/c01operators/calculate/Transform_days_in_years')
 
 describe('Convert specified days into years, weeks and days without leap year.', function () {
 

@@ -1,3 +1,4 @@
+const multipleNumber = require('../../../src/c02controlflow/validate/multipled_number')
 describe('Checks if a number is a multiple of 3 or 7, but not both.', function () {
 
     it('The number must be multiple to 3', function () {

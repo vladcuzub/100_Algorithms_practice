@@ -1,3 +1,5 @@
+const displayFirst10Numbers = require('../../../src/c03arrays/generate/display_first_10_numbers')
+
 describe('Display the first 10 natural numbers', function () {
 
     it('The numbers should start from 1 to 10', function () {

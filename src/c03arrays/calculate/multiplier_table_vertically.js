@@ -19,3 +19,5 @@ function multiplierTable(inputNumber) {
   }
   return table;
 }
+
+module.exports = multiplierTable

@@ -13,3 +13,4 @@ function multipleNumber(inputNumber) {
   }
 }
 
+module.exports = multipleNumber

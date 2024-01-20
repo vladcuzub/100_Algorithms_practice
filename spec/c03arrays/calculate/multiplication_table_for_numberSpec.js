@@ -1,3 +1,5 @@
+const multiplicationTable = require('../../../src/c03arrays/calculate/multiplication_table_for_number')
+
 describe('Display the multiplication table for a given integer', function () {
 
     it('The input number should multiplay with each number from loop', function () {

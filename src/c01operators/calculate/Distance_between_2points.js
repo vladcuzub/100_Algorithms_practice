@@ -14,7 +14,7 @@ function distanceOfTwoPoints(x1, y1, x2, y2) {
   return parseFloat(distance.toFixed(4));
 }
 
-
+module.exports = distanceOfTwoPoints
 
 
 

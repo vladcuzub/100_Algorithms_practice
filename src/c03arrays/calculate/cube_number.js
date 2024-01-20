@@ -16,3 +16,5 @@ function cubeOfNumber(inputNumbers) {
   }
   return cube
 }
+
+module.exports = cubeOfNumber

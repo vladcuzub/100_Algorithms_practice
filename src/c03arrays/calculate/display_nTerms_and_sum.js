@@ -13,3 +13,6 @@ function displayNtermsandTheirSum(nTerms) {
   }
   return sum
 }
+
+
+module.exports = displayNtermsandTheirSum

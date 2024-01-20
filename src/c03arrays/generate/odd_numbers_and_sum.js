@@ -24,3 +24,6 @@ function sumOdds(oddsNumbers){
   }
   return sum
 }
+
+module.exports.findOddNumbers = findOddNumbers
+module.exports.sumOdds = sumOdds

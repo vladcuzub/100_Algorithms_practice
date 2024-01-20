@@ -24,3 +24,6 @@ function calculateAverage(sum, inputNumbers) {
   
   return average
 }
+
+module.exports.calculateSum = calculateSum
+module.exports.calculateAverage = calculateAverage

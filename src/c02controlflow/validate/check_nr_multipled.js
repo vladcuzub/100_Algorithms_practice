@@ -14,3 +14,4 @@ function multipliedNumber(x, y) {
   }
 }
 
+module.exports = multipliedNumber

@@ -13,3 +13,5 @@ function calculate10naturlaNumbers() {
   }
   return sum
 }
+
+module.exports = calculate10naturlaNumbers

@@ -1,3 +1,4 @@
+const multipliedNumber = require('../../../src/c02controlflow/validate/check_nr_multipled')
 describe('Checks whether they are multiplied or not', function () {
 
     it('The division result should not give a remainder', function () {

@@ -1,3 +1,5 @@
+const multiplierTable = require('../../../src/c03arrays/calculate/multiplier_table_vertically')
+
 describe('Display the multiplier table vertically from 1 to n', function () {
 
     it('Should generate a vertical multiplication table up to the specified number', function () {

@@ -13,3 +13,4 @@ function displayFirst10Numbers() {
   return naturalNumbers;
 }
 
+module.exports = displayFirst10Numbers

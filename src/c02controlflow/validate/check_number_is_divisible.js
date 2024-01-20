@@ -14,3 +14,5 @@ function divisibleNumber(inputNumber) {
     return false
   }
 }
+
+module.exports = divisibleNumber

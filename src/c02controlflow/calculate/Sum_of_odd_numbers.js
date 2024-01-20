@@ -20,3 +20,5 @@ function calculateSumOddsNumbers(numbers) {
 
     return sum;
 }
+
+module.exports = calculateSumOddsNumbers

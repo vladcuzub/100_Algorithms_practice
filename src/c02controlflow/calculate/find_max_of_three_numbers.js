@@ -15,3 +15,5 @@ function findMaxNumber(firstNumber, secondNumber, thirdNumber) {
         return thirdNumber;
     }
 }
+
+module.exports = findMaxNumber

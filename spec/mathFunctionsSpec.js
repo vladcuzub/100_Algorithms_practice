@@ -12,4 +12,4 @@ describe('mathFunctions', function () {
         })
     })
 
-})
+}) 

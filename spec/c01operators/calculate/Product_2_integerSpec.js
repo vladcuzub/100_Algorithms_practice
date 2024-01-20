@@ -1,3 +1,5 @@
+const productOfNumbers = require('../../../src/c01operators/calculate/Product_2_integer')
+
 describe('Calculate product of two integers', function () {
 
     it('The product is the result of multiplication of two numbers', function () {

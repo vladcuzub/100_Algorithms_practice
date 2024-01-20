@@ -1,3 +1,5 @@
+const sum = require('../src/mathFunctions.js');
+
 describe('mathFunctions', function () {
 
     describe('sum', function () {

@@ -23,3 +23,8 @@ function calculateRestDays(remainingDays) {
   let restDays = remainingDays % daysInWeek;
   return restDays
 }
+
+
+module.exports.calculateYears = calculateYears
+module.exports.calculateWeeks = calculateWeeks
+module.exports.calculateRestDays = calculateRestDays

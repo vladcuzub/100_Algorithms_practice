@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test": "jest --testMatch **/spec/**"
+  },
+  "jest": {
+    "coverageReporters": [
+      "json-summary"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

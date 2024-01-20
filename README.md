@@ -1,4 +1,4 @@
-[Coverage](./coverage/badge.svg)
+![Coverage](./coverage/badge.svg)
 
 # 100 Algorithms practice
 

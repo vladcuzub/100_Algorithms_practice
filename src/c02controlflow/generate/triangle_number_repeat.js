@@ -7,14 +7,17 @@
 //  333
 //  4444
 
-const triangleNumberRepeat = height => {
+function triangleNumberRepeat(height){
+  let output = ''
+
   for (let i = 1; i <= height; i++) {
     let row = ''
     for (let j = 1; j <= i; j++) {
       row += i
     }
-    console.log(row)
+    output += `${row}\n`
   }
+  return output
 }
 
-triangleNumberRepeat(4)
+module.exports = triangleNumberRepeat

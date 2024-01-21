@@ -7,14 +7,17 @@
 // 123
 // 1234
 
-const triangleWithNumbers = height => {
+function triangleWithNumbers(height){
+  let output = ''
   for (let i = 1; i <= height; i++) {
     let row = ''
     for (let j = 1; j <= i; j++) {
     row += j
     }
-    console.log(row)
+    output += `${row}\n`
   }
+  return output
 }
 
-triangleWithNumbers(10)
+module.exports = triangleWithNumbers
+

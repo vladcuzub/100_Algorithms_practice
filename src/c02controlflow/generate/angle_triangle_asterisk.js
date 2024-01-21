@@ -1,30 +1,23 @@
-// // Write a program to display a pattern like a right angle triangle using an asterisk.
+// Write a program to display a pattern like a right angle triangle using an asterisk.
 
-// // The pattern like :
+// The pattern like :
 
-// // *
-// // **
-// // ***
-// // ****
+// *
+// **
+// ***
+// ****
 
-// // function printRightAngleTriangle(height) {
-// //   for (let i = 1; i <= height; i++) {
-// //     let row = ''
-// //     for (let j = 1; j <= i; j++) {
-// //       row += '*'
-// //     }
-// //     console.log(row)
-// //   }
-// // }
+function printRightAngleTriangle(height) {
+    let output = '';
+    for (let i = 1; i <= height; i++) {
+        let row = '';
+        for (let j = 1; j <= i; j++) {
+            row += '*';
+        }
+        output += row + '\n';
+    }
+    return output;
+}
 
-// // printRightAngleTriangle(4)
 
-// function printRightAngleTriangle(height) {
-//   for (let i = 1; i <= height; i++) {
-//     let row = '*'.repeat(i)
-//     console.log(row)
-//   }
-// }
-
-// printRightAngleTriangle(4)
-
+module.exports = printRightAngleTriangle

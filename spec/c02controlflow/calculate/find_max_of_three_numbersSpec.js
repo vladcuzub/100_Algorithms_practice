@@ -1,4 +1,5 @@
-const findTheMaxNumbers = require('../../../src/c02controlflow/calculate/find_max_of_three_numbers')
+const findMaxNumber = require('../../../src/c02controlflow/calculate/find_max_of_three_numbers')
+
 
 describe('Find maximum of three numbers', function () {
 
@@ -7,7 +8,7 @@ describe('Find maximum of three numbers', function () {
         let secondNumber = 2;
         let thirdNumber = 3;
 
-        let maxNumber = findTheMaxNumbers(firstNumber, secondNumber, thirdNumber)
+        let maxNumber = findMaxNumber(firstNumber, secondNumber, thirdNumber)
 
         expect(maxNumber).toBe(3)
     })
@@ -17,7 +18,7 @@ describe('Find maximum of three numbers', function () {
         let secondNumber = 2;
         let thirdNumber = 3;
 
-        let maxNumber = findTheMaxNumbers(firstNumber, secondNumber, thirdNumber)
+        let maxNumber = findMaxNumber(firstNumber, secondNumber, thirdNumber)
 
         expect(maxNumber).toBe(4)
     })
@@ -27,7 +28,7 @@ describe('Find maximum of three numbers', function () {
         let secondNumber = 5;
         let thirdNumber = 3;
 
-        let maxNumber = findTheMaxNumbers(firstNumber, secondNumber, thirdNumber)
+        let maxNumber = findMaxNumber(firstNumber, secondNumber, thirdNumber)
 
         expect(maxNumber).toBe(5)
     })
@@ -37,7 +38,7 @@ describe('Find maximum of three numbers', function () {
         let secondNumber = 5;
         let thirdNumber = 6;
 
-        let maxNumber = findTheMaxNumbers(firstNumber, secondNumber, thirdNumber)
+        let maxNumber = findMaxNumber(firstNumber, secondNumber, thirdNumber)
 
         expect(maxNumber).toBe(6)
     })

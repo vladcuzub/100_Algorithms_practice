@@ -6,7 +6,7 @@
 // Expected Output:
 // Maximum value of three integers: 35
 
-function findMaxNumber(firstNumber, secondNumber, thirdNumber) {
+ function findMaxNumber(firstNumber, secondNumber, thirdNumber) {
     if (firstNumber >= secondNumber && firstNumber >= thirdNumber) {
         return firstNumber;
     } else if (secondNumber >= firstNumber && secondNumber >= thirdNumber) {

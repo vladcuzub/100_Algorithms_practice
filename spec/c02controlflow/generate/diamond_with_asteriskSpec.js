@@ -17,3 +17,7 @@ describe('Display a pattern like a diamond.', function () {
     })
 
 })
+
+
+
+//jhkhkj

@@ -17,3 +17,6 @@ describe('Display a pattern like a diamond.', function () {
     })
 
 })
+
+
+// Test for main 

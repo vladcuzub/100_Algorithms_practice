@@ -23,7 +23,6 @@ function patternDiamond(height) {
     for (let j = 1; j <= i * 2 - 1; j++) {
       asterisks += '*';
     }
-
     output += space + asterisks + '\n';
   }
 
@@ -37,7 +36,6 @@ function patternDiamond(height) {
     for (let j = 1; j <= i * 2 - 1; j++) {
       asterisks += '*';
     }
-
     output += space + asterisks + '\n';
   }
 

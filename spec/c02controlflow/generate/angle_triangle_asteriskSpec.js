@@ -2,7 +2,7 @@ const printRightAngleTriangle = require('../../../src/c02controlflow/generate/an
 
 describe('Display a pattern like a right angle triangle using an asterisk.', function () {
 
-    it(' Should print first the height and then for each row increase with asterik', function () {
+    it(' Should print the height and for each row increase with asterik', function () {
         let height = 4
 
         let result = printRightAngleTriangle(height)

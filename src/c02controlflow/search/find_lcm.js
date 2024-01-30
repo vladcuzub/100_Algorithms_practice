@@ -1,12 +1,13 @@
-// Write a C program to find the LCM of any two numbers using HCF.
+// Write a program to find the LCM of any two numbers using HCF.
 // Test Data :
 // Input 1st number for LCM: 15
 // Input 2nd number for LCM: 20
 // Expected Output :
 // The LCM of 15 and 20 is : 60
 
-const lowCommonMultiple = (firstNumber, secondNumber) => {
+function lowCommonMultiple(firstNumber, secondNumber) {
   let hcf
+  let lcm
   let smallNumber = firstNumber < secondNumber ? firstNumber : secondNumber
 
   for (let i = 1; i <= smallNumber; i++) {
@@ -15,8 +16,8 @@ const lowCommonMultiple = (firstNumber, secondNumber) => {
     }
   }
 
-  let lcm = (firstNumber * secondNumber) / hcf
-  console.log(lcm)
+  lcm = (firstNumber * secondNumber) / hcf
+  return lcm
 }
 
-lowCommonMultiple(15, 20)
+module.exports = lowCommonMultiple

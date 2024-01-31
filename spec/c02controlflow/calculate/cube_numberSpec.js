@@ -1,4 +1,4 @@
-const cubeOfNumber = require('../../../src/c03arrays/calculate/cube_number')
+const cubeOfNumber = require('../../../src/c02controlflow/calculate/cube_number')
 
 describe('Display the cube of the number up to an integer', function () {
 

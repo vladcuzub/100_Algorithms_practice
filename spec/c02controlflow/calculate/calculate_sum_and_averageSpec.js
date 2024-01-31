@@ -1,4 +1,4 @@
-const finSumAndaverage = require('../../../src/c03arrays/calculate/calculate_sum_and_average')
+const finSumAndaverage = require('../../../src/c02controlflow/calculate/calculate_sum_and_average')
 
 describe('Read 10 numbers from the keyboard and find their sum and average.', function () {
 

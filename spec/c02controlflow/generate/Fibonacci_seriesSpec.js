@@ -1,4 +1,4 @@
-const fibonaciiSeries = require('../../../src/c03arrays/generate/Fibonacci_series')
+const fibonaciiSeries = require('../../../src/c02controlflow/generate/Fibonacci_series')
 
 describe('Display the first n terms of the Fibonacci series.', function () {
 

@@ -1,4 +1,4 @@
-const displayFirst10Numbers = require('../../../src/c03arrays/generate/display_first_10_numbers')
+const displayFirst10Numbers = require('../../../src/c02controlflow/generate/display_first_10_numbers')
 
 describe('Display the first 10 natural numbers', function () {
 

@@ -1,4 +1,4 @@
-const multiplierTable = require('../../../src/c03arrays/calculate/multiplier_table_vertically')
+const multiplierTable = require('../../../src/c02controlflow/calculate/multiplier_table_vertically')
 
 describe('Display the multiplier table vertically from 1 to n', function () {
 

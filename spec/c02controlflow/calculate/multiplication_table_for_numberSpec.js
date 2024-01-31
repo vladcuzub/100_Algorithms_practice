@@ -1,4 +1,4 @@
-const multiplicationTable = require('../../../src/c03arrays/calculate/multiplication_table_for_number')
+const multiplicationTable = require('../../../src/c02controlflow/calculate/multiplication_table_for_number')
 
 describe('Display the multiplication table for a given integer', function () {
 

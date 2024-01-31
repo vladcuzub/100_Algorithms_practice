@@ -1,4 +1,4 @@
-const displayNTermsAndSum = require('../../../src/c03arrays/generate/odd_numbers_and_sum')
+const displayNTermsAndSum = require('../../../src/c02controlflow/calculate/odd_numbers_and_sum')
 
 describe('Display the n terms of odd natural numbers and their sum', function () {
 

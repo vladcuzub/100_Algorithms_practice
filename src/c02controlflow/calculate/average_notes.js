@@ -1,4 +1,4 @@
-// Write a C program to calculate the average mathematics marks of some students. Input 0 (excluding to calculate the average) or a negative value to terminate the input process.
+// Write a program to calculate the average mathematics marks of some students. Input 0 (excluding to calculate the average) or a negative value to terminate the input process.
 // Test Data :
 // Input Mathematics marks (0 to terminate): 10
 // 15
@@ -18,6 +18,7 @@ function calculateAverage(marks) {
         }
         average = sum / marks.length;
     }
-    return average;
+    return parseFloat(average.toFixed(2));
 }
 
+module.exports = calculateAverage

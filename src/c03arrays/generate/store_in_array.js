@@ -8,14 +8,14 @@
 // Expected Output :
 // Elements in array are: 1 1 2 3 4 5 6 7 8 9
 
-const array = []
+function storeElementsInArray(elements){
+  const array = []
 
-const printElements = () => {
-  for (let i = 0; i < 10; i++) {
-    let input = prompt('Add a element: ')
-    array.push(input)
+  for (let i = 0; i < elements.length; i++) {
+   
+    array[i] = elements[i]
   }
-  console.log(`Elements in array are : ${array.join(' ')}`)
+ return array
 }
 
-printElements()
+module.exports = storeElementsInArray

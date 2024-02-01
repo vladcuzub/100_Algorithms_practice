@@ -1,4 +1,4 @@
-// Write a program in C to print all unique elements in an array.
+// Write a program to print all unique elements in an array.
 // Test Data:
 // Print all unique elements of an array:
 // ------------------------------------------
@@ -12,22 +12,11 @@
 // The unique elements found in the array are:
 // 3 5
 
-let array = []
-let inputsNumber = 0;
-let input
 
-const getElementsFromInput = () => {
-  inputsNumber = prompt(`Input the number of elements to be stored in the array: `)
-  for (let i = 0; i < inputsNumber; i++) {
-    input = prompt(`Input ${i} elements in the array:`)
-    array.push(input)
-  }
-  return array
-}
 
-const findUniqueElementsInArray = () => {
+function findUniqueElementsInArray(array){
   let uniqueArray = [];
-  
+
   for (let i = 0; i < array.length; i++) {
     let isUnique = true;
     for (let j = 0; j < array.length; j++) {
@@ -36,13 +25,13 @@ const findUniqueElementsInArray = () => {
         break;
       }
     }
-    if (isUnique) {
-      uniqueArray.push(array[i]);
+    if(isUnique) {
+      uniqueArray[uniqueArray.length] = array[i];
     }
   }
   return uniqueArray;
-};
 
+}
 
-getElementsFromInput()
-findUniqueElementsInArray()
+module.exports = findUniqueElementsInArray
+

@@ -16,36 +16,36 @@
 
 
 function mergeArrays(firstArray, secondArray) {
-    let resultArray = [];
-    let left = firstArray.length - 1;
-    let right = secondArray.length - 1;
+    let newArray = [];
+    let head = firstArray.length - 1;
+    let tail = secondArray.length - 1;
     let resultIndex = 0;
 
-    while (left >= 0 && right >= 0) {
-        if (firstArray[left] >= secondArray[right]) {
-            resultArray[resultIndex] = firstArray[left];
-            left--;
+    while (head >= 0 && tail >= 0) {
+        if (firstArray[head] >= secondArray[tail]) {
+            newArray[resultIndex] = firstArray[head];
+            head--;
         } else {
-            resultArray[resultIndex] = secondArray[right];
-            right--;
+            newArray[resultIndex] = secondArray[tail];
+            tail--;
         }
         resultIndex++;
     }
 
-    while (left >= 0) {
-        resultArray[resultIndex] = firstArray[left];
-        left--;
+    while (head >= 0) {
+        newArray[resultIndex] = firstArray[head];
+        head--;
         resultIndex++;
     }
 
 
-    while (right >= 0) {
-        resultArray[resultIndex] = secondArray[right];
-        right--;
+    while (tail >= 0) {
+        newArray[resultIndex] = secondArray[tail];
+        tail--;
         resultIndex++;
     }
 
-    return resultArray;
+    return newArray;
 }
 
 

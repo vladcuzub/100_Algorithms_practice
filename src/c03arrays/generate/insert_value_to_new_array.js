@@ -16,11 +16,28 @@
 // 2 5 7 8 9 11
 
 
+function addNewElementToArray(array, newValue) {
 
-function addNewElementToArray (array,newValue) {
+    array[array.length] = newValue
 
-    
-    
+    for (let i = 0; i < array.length - 1; i++) {
+        let min_index = i;
+
+        for (let j = i + 1; j < array.length; j++) {
+
+            if (array[j] < array[min_index]) {
+                min_index = j;
+                console.log(array[j])
+            }
+        }
+        if (min_index !== i) {
+            const temp = array[i];
+            array[i] = array[min_index];
+            array[min_index] = temp;
+        }
+    }
+
+    return array;
 }
 
 module.exports = addNewElementToArray

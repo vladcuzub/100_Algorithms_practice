@@ -12,7 +12,7 @@
 // 2 4 5 7 9
 
 function sortElementsInArray(array) {
-    
+
     for (let i = 0; i < array.length - 1; i++) {
         let min_index = i;
 

@@ -1,4 +1,4 @@
-const addNewElementToArray = require('../../../src/c03arrays/generate/insert_value_to_new_array')
+const addNewElementInArray = require('../../../src/c03arrays/generate/insert_value_to_new_array')
 
 describe('Insert new value in Array', function () {
 
@@ -6,7 +6,7 @@ describe('Insert new value in Array', function () {
         let array = [2,5,7,9]
         let newValue = 8
 
-        let result = addNewElementToArray(array,newValue)
+        let result = addNewElementInArray(array,newValue)
 
         expect(result).toEqual([2,5,7,8,9])
     })

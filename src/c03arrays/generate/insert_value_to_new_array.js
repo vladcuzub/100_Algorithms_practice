@@ -15,9 +15,7 @@
 // After Insert the list is:
 // 2 5 7 8 9 11
 
-
-function addNewElementToArray(array, newValue) {
-
+function addNewElementInArray(array, newValue) {
     array[array.length] = newValue
 
     for (let i = 0; i < array.length - 1; i++) {
@@ -40,4 +38,4 @@ function addNewElementToArray(array, newValue) {
     return array;
 }
 
-module.exports = addNewElementToArray
+module.exports = addNewElementInArray

@@ -15,7 +15,7 @@
 // 1 5 8 7 10
 
 
-function insertNewValueAtPosition (array, newValue, position){
+function insertNewValueAtPosition(array, newValue, position) {
     let newArray = [];
 
     for (let i = 0; i < position - 1; i++) {

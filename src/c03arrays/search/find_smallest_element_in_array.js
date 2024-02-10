@@ -1,4 +1,4 @@
-/* Write a program in C to find the second smallest element in an array.
+/* Write a program to find the second smallest element in an array.
 Test Data :
 Input the size of array : 5
 Input 5 elements in the array (value must be <9999) :
@@ -11,18 +11,8 @@ Expected Output :
 The Second smallest element in the array is : 4 */
 
 
-const readArray = () => {
-    let array = [];
-    let arrySize = parseInt(prompt('Input the size of array : '));
 
-    for (let i = 0; i < arrySize; i++) {
-        let element = parseInt(prompt(`Input ${i} elements in the array  `));
-        array[i] = element
-    }
-    return array
-}
-
-const findSecondSmallestElement = (array) => {
+function findSecondSmallestElement(array) {
     let smallestElement = array[0];
     let secondSmallestElement = array[1];
 
@@ -35,13 +25,6 @@ const findSecondSmallestElement = (array) => {
         }
     }
     return secondSmallestElement;
-    }
-
-
-const main = () => {
-    const array = readArray()
-    const secondSmallestElement = findSecondSmallestElement(array)
-    console.log(`The Second smallest element in the array is : ${secondSmallestElement}`);
 }
 
-main();
+module.exports = findSecondSmallestElement

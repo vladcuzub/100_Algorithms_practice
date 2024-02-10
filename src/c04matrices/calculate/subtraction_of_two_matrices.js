@@ -1,4 +1,4 @@
-/* Write a program in C for the subtraction of two matrices.
+/* Write a program for the subtraction of two matrices.
 Test Data :
 Input the size of the square matrix (less than 5): 2
 Input elements in the first matrix :
@@ -25,9 +25,7 @@ The Subtraction of two matrix is :
 4 4
 4 4 */
 
-
-
-function subtractionMatrices  (firstMatrix, secondMatrix)  {
+function subtractionMatrices(firstMatrix, secondMatrix) {
     const substractionResult = []
 
     for (let i = 0; i < firstMatrix.length; i++) {
@@ -40,5 +38,6 @@ function subtractionMatrices  (firstMatrix, secondMatrix)  {
     return substractionResult
 }
 
+module.exports = subtractionMatrices
 
 

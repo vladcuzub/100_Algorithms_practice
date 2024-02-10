@@ -3,11 +3,11 @@ const findSecondLargestElementInArray = require('../../../src/c03arrays/search/f
 describe('Find the second largest element', function () {
 
     it('Should return two the second largest element from array when is found', function () {
-        let array = [2,9,1,4]
+        let array = [10, 20, 5, 4, 3, 6]
      
         let result = findSecondLargestElementInArray(array)
 
-        expect(result).toBe(4)
+        expect(result).toBe(10)
     })
 
 })

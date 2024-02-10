@@ -11,12 +11,20 @@ Expected Output:
 The Second largest element in the array is: 6 */
 
 
-function findSecondLargestElementInArray (array){
-    let largestElement = array[0];
-    let secondLargestElement = array[1];
+function findSecondLargestElementInArray(array) {
+    let largestElement
+    let secondLargestElement
+
+    if (array[0] < array[1]) {
+        largestElement = array[1];
+        secondLargestElement = array[0];
+    } else {
+        largestElement = array[0];
+        secondLargestElement = array[1];
+    }
 
     for (let i = 2; i < array.length; i++) {
-        if (array[i] < largestElement) {
+        if (array[i] > largestElement) {
             secondLargestElement = largestElement;
             largestElement = array[i];
         } else if (array[i] > secondLargestElement && array[i] !== largestElement) {

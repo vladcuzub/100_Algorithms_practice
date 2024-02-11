@@ -1,10 +1,8 @@
 ![Coverage](./coverage/badge.svg)
 
 # 100 Algorithms practice
-
 ## Description:
 - Explore a collection of algorithmic exercises originally coded in C and skillfully translated into JavaScript. This repository is perfect for those eager to enhance their algorithmic problem-solving abilities while transitioning between C and JavaScript.
-
 
 ## Features:
 - Problem Variety: Diverse set of algorithmic challenges covering fundamental data structures to advanced dynamic programming.

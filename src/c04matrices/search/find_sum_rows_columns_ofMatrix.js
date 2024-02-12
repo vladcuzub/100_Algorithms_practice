@@ -30,7 +30,6 @@ function sumRowsMatrix(matrix) {
             rowsSum[i] += matrix[i][j]
         }
     }
-
     return rowsSum
 }
 

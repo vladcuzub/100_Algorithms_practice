@@ -14,7 +14,6 @@ function lcmNumber(firstNumber, secondNumber) {
     }
     hightNumber++
   }
-  return lcm
 }
 
 module.exports = lcmNumber

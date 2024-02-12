@@ -25,7 +25,6 @@ function addNewElementInArray(array, newValue) {
 
             if (array[j] < array[min_index]) {
                 min_index = j;
-                console.log(array[j])
             }
         }
         if (min_index !== i) {

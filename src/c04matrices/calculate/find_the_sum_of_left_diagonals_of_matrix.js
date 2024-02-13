@@ -18,9 +18,7 @@ function sumLeftdiagonals(matrix) {
 
     for (let i = 0; i < matrix.length; i++) {
 
-        console.log(i)
         for (let j = 0; j < matrix.length; j++) {
-            console.log(j)
             if (i !== j) {
                 sum += matrix[i][j];
             }

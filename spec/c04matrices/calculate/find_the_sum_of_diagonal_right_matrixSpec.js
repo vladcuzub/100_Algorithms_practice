@@ -3,7 +3,8 @@ const sumRightDiagonals = require('../../../src/c04matrices/calculate/find_the_s
 describe('Sum of the right diagonals of a matrix', function () {
 
     it('Should find the right diagonals of matrix and calculate the sum', function () {
-        let matrix = [[1,2],[3,4]]
+        let matrix = [[1,2],
+                      [3,4]]
 
         let result = sumRightDiagonals(matrix)
 

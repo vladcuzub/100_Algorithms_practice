@@ -1,4 +1,4 @@
-/* Write a program in C to find the sum of the left diagonals of a matrix.
+/* Write a program to find the sum of the left diagonals of a matrix.
 Test Data :
 Input the size of the square matrix : 2
 Input elements in the first matrix :
@@ -13,12 +13,16 @@ The matrix is :
 Addition of the left Diagonal elements is :5 */
 
 
+function sumLeftdiagonals(matrix) {
+    let sum = 0
 
+    for (let i = 0; i < matrix.length; i++) {
+        sum += matrix[i][i];
+    }
+    return sum
+}
 
-
-
-
-
+module.exports = sumLeftdiagonals
 
 
 

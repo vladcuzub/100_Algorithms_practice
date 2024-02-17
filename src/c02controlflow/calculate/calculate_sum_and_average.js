@@ -8,7 +8,6 @@
 // The sum of 10 no is : 55
 // The Average is : 5.500000
 
-
 function calculateSum(inputNumbers) {
   let sum = 0;
 
@@ -17,7 +16,6 @@ function calculateSum(inputNumbers) {
   }
   return sum
 }
-
 
 function calculateAverage(sum, inputNumbers) {
   let average = sum / inputNumbers

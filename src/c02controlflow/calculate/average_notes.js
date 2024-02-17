@@ -8,7 +8,6 @@
 // Expected Output:
 // Average marks in Mathematics: 17.50
 
-
 function calculateAverage(marks) {
     let average = 0;
     if (marks.length !== 0) {

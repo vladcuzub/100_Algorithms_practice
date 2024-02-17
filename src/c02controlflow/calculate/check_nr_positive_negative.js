@@ -9,7 +9,6 @@
 // Number of positive numbers: 3
 // Number of negative numbers: 2
 
-
 function countPositivNumbers(numbers) {
     let positiveNumbers = 0;
 

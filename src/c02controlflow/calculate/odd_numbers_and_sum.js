@@ -15,7 +15,6 @@ let oddNumbers = ''
   return oddNumbers
 }
 
-
 function sumOdds(oddsNumbers){
   let sum = 0
   

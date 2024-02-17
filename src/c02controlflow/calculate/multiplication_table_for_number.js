@@ -17,5 +17,4 @@ function multiplicationTable(inputNumber) {
   return result
 }
 
-
 module.exports = multiplicationTable

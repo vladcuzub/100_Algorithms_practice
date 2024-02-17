@@ -8,7 +8,6 @@
 // Expected Output:
 // Sum of all odd values: 46
 
-
 function calculateSumOddsNumbers(numbers) {
     let sum = 0;
 

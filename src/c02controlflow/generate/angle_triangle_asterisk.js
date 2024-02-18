@@ -19,5 +19,4 @@ function printRightAngleTriangle(height) {
     return output;
 }
 
-
 module.exports = printRightAngleTriangle

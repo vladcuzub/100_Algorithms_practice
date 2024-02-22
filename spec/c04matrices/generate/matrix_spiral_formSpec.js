@@ -1,4 +1,4 @@
-const matrixInSpiralForm = require('../../../src/c04matrices/generate/display_upperTriangleMatrix')
+const matrixInSpiralForm = require('../../../src/c04matrices/generate/matrix_spiral_form')
 
 describe('Matrix Spiral', function () {
 
@@ -10,10 +10,10 @@ describe('Matrix Spiral', function () {
 
         let result = matrixInSpiralForm(matrix)
 
-        let spitalMatrix = [[1, 2, 3, 4, 5, 10, 15, 20, 19, 18, 17, 16, 11, 6, 7, 8, 9, 14, 13, 12]]
+        let spiralMatrix = [ 1, 2, 3, 4, 5, 10, 15, 20, 19, 18, 17, 16, 11, 6, 7, 8, 9, 14, 13, 12 ]
       
 
-            expect(result).toEqual(spitalMatrix)
+        expect(result).toEqual(spiralMatrix)
     })
 
 })

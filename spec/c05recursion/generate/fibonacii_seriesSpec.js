@@ -1,6 +1,6 @@
 const addSeriesToArray = require('../../../src/c05recursion/generate/fibonacii_series')
 
-describe('Fibonacii series', function () {
+describe('Fibonacci series', function () {
 
     it('Should print Fibonacci series using recursion', function () {
       

@@ -1,23 +1,23 @@
-/* 2. Write a program to calculate the sum of numbers from 1 to n using recursion.
+/* 2. Write a program to calculate the sum of starts from 1 to n using recursion.
 Test Data :
-Input the last number of the range starting from 1 : 5
+Input the last start of the range starting from 1 : 5
 Expected Output:
 
-The sum of numbers from 1 to 5 : 
+The sum of starts from 1 to 5 : 
 15*/
 
 
-function calculateSum(number, limit) {
+function calculateSum(start, end) {
     let sum = 0;
 
     function addSum(n) {
-        if (n > limit) {
+        if (n > end) {
             return
         }
         sum += n
-        addSum(n + number)
+        addSum(n + 1)
     }
-    addSum(number)
+    addSum(start)
     return sum
 }
 

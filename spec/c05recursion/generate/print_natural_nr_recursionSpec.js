@@ -1,6 +1,6 @@
-const printNaturalNumbers = require('../../../src/c05recursion/generate/print_50_natural_nr_recursion')
+const printNaturalNumbers = require('../../../src/c05recursion/generate/print_natural_nr_recursion')
 
-describe('20 natural printNaturalNumbers', function () {
+describe('Print natural number using Recursion', function () {
 
     it('Should print 20 natural numbers using recursion ', function () {
         let limit = 20

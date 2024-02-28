@@ -1,4 +1,4 @@
-/* Write a C program to sort a list of elements using the insertion sort algorithm. >
+/* Write a program to sort a list of elements using the insertion sort algorithm. >
 Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It is much less efficient on large lists than other algorithms such as quicksort, heapsort, or merge sort. */
 
 function insertionSorting(array) {

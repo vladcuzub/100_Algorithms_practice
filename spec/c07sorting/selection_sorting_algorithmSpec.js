@@ -1,7 +1,6 @@
 const sortElements = require('../../src/c07sorting/selection_sorting_algorithm')
 
 describe('Sorting elements', function () {
-
     it('Shoult sort elements using selection sorting algorithm', function () {
 
         let array = [5,2,4,3]

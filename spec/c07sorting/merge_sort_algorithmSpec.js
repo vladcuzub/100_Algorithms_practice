@@ -4,10 +4,10 @@ describe('Merge sorting', function () {
 
     it('Should sort elements using merge sorting algorithm', function () {
 
-        let array = [5, 2, 4, 3]
+        let array = [4, 2, 8, 7, 6]
 
         let result = mergeSort(array)
 
-        expect(result).toEqual([2, 3, 4, 5])
+        expect(result).toEqual([2,4,6,7,8])
     })
 })

@@ -1,7 +1,6 @@
 const matrixInSpiralForm = require('../../../src/c04matrices/generate/matrix_spiral_form')
 
 describe('Matrix Spiral', function () {
-
     it('Should print a matrix in a spiral form ', function () {
         let matrix = [[1,2,3,4,5],
         [6,7,8,9,10],

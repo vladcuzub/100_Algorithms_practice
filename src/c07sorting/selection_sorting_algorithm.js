@@ -4,7 +4,6 @@ According to Wikipedia "In computer science, selection sort is a sorting algorit
 a) To find maximum of elements
 b) To swap two elements */
 
-
 function sortElements(array) {
 
     for (let i = 0; i < array.length - 1; i++) {
@@ -22,6 +21,5 @@ function sortElements(array) {
     }
     return array
 }
-
 
 module.exports = sortElements

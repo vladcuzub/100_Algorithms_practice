@@ -15,7 +15,7 @@ function insertionSorting(array) {
 
         array[j + 1] = current;
     }
-
+    
     return array;
 }
 

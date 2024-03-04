@@ -12,7 +12,6 @@ function matrixInSpiralForm(matrix) {
 
     let spiral = [];
     let index = 0;
-
     let top = 0;
     let bottom = matrix.length - 1;
     let left = 0;
@@ -45,7 +44,6 @@ function matrixInSpiralForm(matrix) {
             left++;
         }
     }
-
 
     return spiral;
 }

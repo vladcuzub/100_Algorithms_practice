@@ -48,9 +48,7 @@ function merge(left, right) {
         rightIndex++;
         sortedArrayIndex++;
     }
-
     return sortedArray;
 }
-
 
 module.exports = mergeSort

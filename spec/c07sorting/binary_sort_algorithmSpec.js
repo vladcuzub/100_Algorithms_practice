@@ -8,6 +8,6 @@ describe('Binary sorting', function () {
 
         let result = binarySearch(array,target)
 
-        expect(result).toBe([1])
+        expect(result).toBe(8)
     })
 })

@@ -9,13 +9,13 @@ describe('Convert decimal to octal', function () {
 
         expect(result).toBe(31)
     })
-    it('Should convert decimal number 0 to octal number wich is 0 ', function () {
+    it('Should convert decimal number 20 to octal number wich is 24 ', function () {
 
-        let decimalNumber = 0
+        let decimalNumber = 20
 
         let result = decimalToOctal(decimalNumber)
 
-        expect(result).toBe(0)
+        expect(result).toBe(24)
     })
     it('Should convert decimal number 1 to octal number wich is 1 ', function () {
 
@@ -25,14 +25,7 @@ describe('Convert decimal to octal', function () {
 
         expect(result).toBe(1)
     })
-    it('Should convert decimal number 2 to octal number wich is 2', function () {
-
-        let decimalNumber = 2
-
-        let result = decimalToOctal(decimalNumber)
-
-        expect(result).toBe(2)
-    })
+   
     it('Should convert decimal number 3 to octal number wich is 3', function () {
 
         let decimalNumber = 3

@@ -19,4 +19,22 @@ describe('Convert decimal to hexadecimal', function () {
 
         expect(result).toBe('a')
     })
+
+    it('Should convert decimal number 12 to hexadecimal number wich is c ', function () {
+
+        let decimalNumber = 12
+
+        let result = convertDecimalToHexadecimal(decimalNumber)
+
+        expect(result).toBe('c')
+    })
+
+    it('Should convert decimal number 16 to hexadecimal number wich is 10 ', function () {
+
+        let decimalNumber = 16
+
+        let result = convertDecimalToHexadecimal(decimalNumber)
+
+        expect(result).toBe('10')
+    })
 })

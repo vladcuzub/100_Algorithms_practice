@@ -1,7 +1,7 @@
 const quickSort = require('../../src/c07sorting/quick_sort')
 
 describe('quick sorting', function () {
-    it('Shoult sort elements using quick sorting algorithm', function () {
+    it('Should sort elements using quick sorting algorithm', function () {
 
         let array = [9, 6, 1, 8]
 

@@ -1,7 +1,7 @@
 const insertionSorting = require('../../src/c07sorting/insertion_sorting_algorithm')
 
 describe('Insertion sorting', function () {
-    it('Shoult sort elements using insertion sorting algorithm', function () {
+    it('Should sort elements using insertion sorting algorithm', function () {
 
         let array = [4, 6, 5, 2, 1]
 

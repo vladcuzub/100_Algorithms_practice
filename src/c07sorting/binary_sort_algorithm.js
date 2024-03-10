@@ -1,26 +1,25 @@
 /* Write a  program to find the position of a target value within a sorted array using binary search.*/
 
-function binarySearch(arr, target) {
-    let left = 0;
-    let right = arr.length - 1;
+function findPositionTarget(array, target) {
+    let leftIndex = 0;
+    let rightIndex = array.length - 1;
 
-    while (left <= right) {
-        let mid = Math.floor((left + right) / 2);
+    while (leftIndex <= rightIndex) {
+        let middleIndex = Math.floor((leftIndex + rightIndex) / 2)
 
-        if (arr[mid] === target) {
-            return mid;
+        if (target === array[middleIndex]) {
+            return middleIndex
         }
 
-        if (arr[mid] < target) {
-            left = mid + 1;
-        }
-        else {
-            right = mid - 1;
+        if (target < array[middleIndex]) {
+            rightIndex = middleIndex - 1
+
+        } else {
+            leftIndex = middleIndex + 1
         }
     }
 
-    return -1;
+    return - 1
 }
 
-
-module.exports = binarySearch
+module.exports = findPositionTarget

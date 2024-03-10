@@ -1,13 +1,13 @@
-const binarySearch = require('../../src/c07sorting/binary_sort_algorithm')
+const findPositionTarget = require('../../src/c07sorting/binary_sort_algorithm')
 
 describe('Binary sorting', function () {
-    it('Shoult find the position of target with binary search', function () {
+    it('Shoult find the position of target using  binary search', function () {
 
-        let array = [9, 6, 1, 8, 10]
-        let target = 3
+        let array = [1,2,4,6,10]
+        let target = 6
 
-        let result = binarySearch(array,target)
+        let result = findPositionTarget(array, target)
 
-        expect(result).toBe(8)
+        expect(result).toBe(3)
     })
 })

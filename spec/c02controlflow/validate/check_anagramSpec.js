@@ -10,7 +10,7 @@ describe('Checks anagram', function () {
         expect(result).toBe(true)
     })
 
-    it('Should check if two given strings are anagram', function () {
+    it('Should check if two given strings are not anagram', function () {
         let firstWord = 'listen'
         let secondWord = 'asdadsadfgd'
 

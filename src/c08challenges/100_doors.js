@@ -7,17 +7,16 @@ The third time, every 3rd door (door #3, #6, #9, ...), etc, until you only visit
 Question: What state are the doors in after the last pass? Which are open, which are closed?*/
 
 function toggleDoors() {
-    const doors = {}; // Represents the state of doors
+    const doors = {}; 
 
-    // Iterate over each pass
     for (let pass = 1; pass <= 100; pass++) {
-        // Toggle the state of doors based on the current pass
+   
         for (let i = pass - 1; i < 100; i += pass) {
             doors[i] = !doors[i];
         }
     }
 
-    // Identify which doors are open
+
     const openDoors = [];
     const closedDoors = [];
     for (let i = 0; i < 100; i++) {

@@ -6,8 +6,6 @@ The third time, every 3rd door (door #3, #6, #9, ...), etc, until you only visit
 
 Question: What state are the doors in after the last pass? Which are open, which are closed?*/
 
-let doors = 100;
-
 function toggleDoors(doors) {
     let doorsState = [];
 

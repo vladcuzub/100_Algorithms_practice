@@ -6,31 +6,33 @@ The third time, every 3rd door (door #3, #6, #9, ...), etc, until you only visit
 
 Question: What state are the doors in after the last pass? Which are open, which are closed?*/
 
-function toggleDoors() {
-    const doors = {}; 
+let doors = 100;
 
-    for (let pass = 1; pass <= 100; pass++) {
-   
-        for (let i = pass - 1; i < 100; i += pass) {
-            doors[i] = !doors[i];
+function toggleDoors(doors) {
+    let doorsState = [];
+
+    for (let i = 0; i < doors; i++) {
+        doorsState[i] = false
+    }
+
+    for (let pass = 1; pass <= doors; pass++) {
+
+        for (let door = pass - 1; door < doors; door += pass) {
+            doorsState[door] = !doorsState[door];
         }
     }
 
+    let openDoors = ''
+    let closedDoors = ''
 
-    const openDoors = [];
-    const closedDoors = [];
-    for (let i = 0; i < 100; i++) {
-        if (doors[i]) {
-            openDoors.push(i + 1);
+    for (let i = 0; i < doors; i++) {
+        if (doorsState[i]) {
+            openDoors += (i + 1) + ','
         } else {
-            closedDoors.push(i + 1);
+            closedDoors += (i + 1) + ','
         }
     }
-
-    return { openDoors, closedDoors };
+    return { openDoors, closedDoors }
 }
 
-// Execute the function
-const { openDoors, closedDoors } = toggleDoors();
-
-
+module.exports = toggleDoors

@@ -13,7 +13,7 @@ For example:
 {}([]) is balanced
 
 {()}[[{}]] is balanced */
-function areParenthesesBalanced(str) {
+function balancedParentheses(str) {
     const stack = [];
     const pairs = {
         '(': ')',
@@ -26,6 +26,7 @@ function areParenthesesBalanced(str) {
         const char = str[i];
         if (char === '(' || char === '[' || char === '{') {
             stack.push(char);
+
         } else if (char === ')' || char === ']' || char === '}') {
             if (stack.length === 0) return false; // Unmatched closing bracket
             const lastOpeningBracket = stack.pop();
@@ -37,10 +38,10 @@ function areParenthesesBalanced(str) {
 }
 
 // Test cases
-console.log(areParenthesesBalanced("{{)(}}")); // false
-console.log(areParenthesesBalanced("({)}")); // false
-console.log(areParenthesesBalanced("[({})]")); // true
-console.log(areParenthesesBalanced("{}([])")); // true
-console.log(areParenthesesBalanced("{()}[[{}]]")); // true
+// console.log(areParenthesesBalanced("{{)(}}")); // false
+// console.log(areParenthesesBalanced("({)}")); // false
+// console.log(areParenthesesBalanced("[({})]")); // true
+// console.log(areParenthesesBalanced("{}([])")); // true
+// console.log(areParenthesesBalanced("{()}[[{}]]")); // true
 
 module.exports = balancedParentheses

@@ -2,11 +2,11 @@ const balancedParentheses = require('../../../src/c02controlflow/validate/balanc
 describe('Balances parentheses', function () {
 
     it('Should check if string are balanced or not', function () {
-        let x = 10;
-        let y = 2
+   
+        let str = '{{)(}}'
 
-        let result = multipliedNumber(x, y)
+        let result = balancedParentheses(str)
 
-        expect(result).toBe(true)
+        expect(result).toBe(false)
     })
 })

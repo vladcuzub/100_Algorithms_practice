@@ -9,4 +9,28 @@ describe('Balances parentheses', function () {
 
         expect(result).toBe(false)
     })
+    it('Should check if string are balanced or not', function () {
+
+        let str = "({)}"
+
+        let result = balancedParentheses(str)
+
+        expect(result).toBe(false)
+    })
+    it('Should check if string are balanced or not', function () {
+
+        let str = "[({})]"
+
+        let result = balancedParentheses(str)
+
+        expect(result).toBe(true)
+    })
+    it('Should check if string are balanced or not', function () {
+
+        let str = "{}([])"
+
+        let result = balancedParentheses(str)
+
+        expect(result).toBe(true)
+    })
 })

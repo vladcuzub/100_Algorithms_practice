@@ -28,20 +28,13 @@ function balancedParentheses(str) {
             stack.push(char);
 
         } else if (char === ')' || char === ']' || char === '}') {
-            if (stack.length === 0) return false; // Unmatched closing bracket
+            if (stack.length === 0) return false;
             const lastOpeningBracket = stack.pop();
-            if (pairs[lastOpeningBracket] !== char) return false; // Mismatched brackets
+            if (pairs[lastOpeningBracket] !== char) return false;
         }
     }
 
-    return stack.length === 0; // Return true if stack is empty, false otherwise
+    return stack.length === 0;
 }
-
-// Test cases
-// console.log(areParenthesesBalanced("{{)(}}")); // false
-// console.log(areParenthesesBalanced("({)}")); // false
-// console.log(areParenthesesBalanced("[({})]")); // true
-// console.log(areParenthesesBalanced("{}([])")); // true
-// console.log(areParenthesesBalanced("{()}[[{}]]")); // true
 
 module.exports = balancedParentheses

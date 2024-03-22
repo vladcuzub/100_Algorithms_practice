@@ -21,20 +21,23 @@ function balancedParentheses(str) {
         '{': '}'
     };
 
+    let stackPointer = -1; 
+
     const len = str.length;
     for (let i = 0; i < len; i++) {
         const char = str[i];
         if (char === '(' || char === '[' || char === '{') {
-            stack.push(char);
+            stackPointer++; 
+            stack[stackPointer] = char; 
 
         } else if (char === ')' || char === ']' || char === '}') {
-            if (stack.length === 0) return false;
-            const lastOpeningBracket = stack.pop();
+            if (stackPointer === -1) return false;
+            const lastOpeningBracket = stack[stackPointer];
+            stackPointer--; 
             if (pairs[lastOpeningBracket] !== char) return false;
         }
     }
 
-    return stack.length === 0;
+    return stackPointer === -1;
 }
-
-module.exports = balancedParentheses
+module.exports = balancedParentheses;

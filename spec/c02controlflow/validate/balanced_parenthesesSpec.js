@@ -1,7 +1,7 @@
 const balancedParentheses = require('../../../src/c02controlflow/validate/balanced_parentheses')
 describe('Balances parentheses', function () {
 
-    it('Should check if string are balanced or not', function () {
+    it('Should return false when string are not balanced', function () {
    
         let str = '{{)(}}'
 
@@ -9,7 +9,7 @@ describe('Balances parentheses', function () {
 
         expect(result).toBe(false)
     })
-    it('Should check if string are balanced or not', function () {
+    it('Should return false when string are not balanced', function () {
 
         let str = "({)}"
 
@@ -17,7 +17,7 @@ describe('Balances parentheses', function () {
 
         expect(result).toBe(false)
     })
-    it('Should check if string are balanced or not', function () {
+    it('Should return true when string are balanced', function () {
 
         let str = "[({})]"
 
@@ -25,7 +25,7 @@ describe('Balances parentheses', function () {
 
         expect(result).toBe(true)
     })
-    it('Should check if string are balanced or not', function () {
+    it('Should return true when string are balanced', function () {
 
         let str = "{}([])"
 

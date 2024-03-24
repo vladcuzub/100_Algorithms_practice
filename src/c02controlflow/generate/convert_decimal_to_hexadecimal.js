@@ -17,6 +17,7 @@ function convertDecimalToHexadecimal(decimalNumber) {
     }
 
     return hexadecimalNumber
+    
 }
 
 module.exports = convertDecimalToHexadecimal

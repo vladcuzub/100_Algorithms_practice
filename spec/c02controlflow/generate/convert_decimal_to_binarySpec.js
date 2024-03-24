@@ -44,5 +44,6 @@ describe('Convert decimal to Binary', function () {
         let result = convertDecimalToBinary(decimalNumber)
 
         expect(result).toBe(100)
+        
     })
 })

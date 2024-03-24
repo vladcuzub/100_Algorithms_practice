@@ -22,6 +22,7 @@ function convertDecimalToBinary(decimalNumber) {
 
         decimalNumber = Math.floor(decimalNumber / 2)
     }
+    
     return binary
 }
 module.exports = convertDecimalToBinary 

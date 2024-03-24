@@ -36,5 +36,6 @@ describe('Convert decimal to hexadecimal', function () {
         let result = convertDecimalToHexadecimal(decimalNumber)
 
         expect(result).toBe('10')
+        
     })
 })

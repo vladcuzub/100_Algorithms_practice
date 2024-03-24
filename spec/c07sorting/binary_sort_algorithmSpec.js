@@ -9,5 +9,6 @@ describe('Binary sorting', function () {
         let result = findPositionTarget(array, target)
 
         expect(result).toBe(3)
+        
     })
 })

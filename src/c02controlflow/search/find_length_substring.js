@@ -21,6 +21,7 @@ function findLengthSubsting(string) {
     }
 
     return maxLength;
+    
 }
 
 module.exports = findLengthSubsting

@@ -41,5 +41,6 @@ describe('Convert decimal to octal', function () {
         let result = decimalToOctal(decimalNumber)
 
         expect(result).toBe(10)
+        
     })
 })

@@ -20,6 +20,7 @@ function findPositionTarget(array, target) {
     }
 
     return - 1
+    
 }
 
 module.exports = findPositionTarget

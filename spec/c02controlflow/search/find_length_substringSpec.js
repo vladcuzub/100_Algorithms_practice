@@ -35,6 +35,7 @@ describe('Find length of substring', function () {
         let result = findLengthSubsting(string)
 
         expect(result).toBe(8)
+        
     })
 
 })

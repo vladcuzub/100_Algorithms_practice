@@ -27,6 +27,16 @@ describe('Armstrong Number', function () {
 
         expect(result).toBe(false)
     })
+
+    it('Should return false when is not a Armstrong number', function () {
+
+        let number = 947
+
+        let result = armstrongNumber(number)
+
+        expect(result).toBe(false)
+    })
+
    
 
 })

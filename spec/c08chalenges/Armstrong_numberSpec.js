@@ -19,13 +19,13 @@ describe('Armstrong Number', function () {
         expect(result).toBe(true)
     })
 
-    it('Should return true when is Armstrong number', function () {
+    it('Should return false when is not a Armstrong number', function () {
 
-        let number = 153
+        let number = 123
 
         let result = armstrongNumber(number)
 
-        expect(result).toBe(true)
+        expect(result).toBe(false)
     })
    
 

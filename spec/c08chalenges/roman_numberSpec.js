@@ -1,21 +1,30 @@
-const translatePigLatin = require('../../src/c08challenges/pig_latin')
+const convertToRoman = require('../../src/c08challenges/roman_number')
 
-describe('Pig latin', function () {
-    it('Should return a word with ay and first letter at end when the word begin with a consonant', function () {
+describe('Roman number', function () {
+    it('Should convert a given number to a roman numeral', function () {
 
-        let word = 'california'
+        let number = 16
 
-        let result = translatePigLatin(word)
+        let result = convertToRoman(number)
 
-        expect(result).toBe('aliforniacay')
+        expect(result).toBe('XVI')
     })
-    it('Should return a word with way  at end when the word begin with a vowel', function () {
+    it('Should convert a given number to a roman numeral', function () {
 
-        let word = 'algorithm'
+        let number = 12
 
-        let result = translatePigLatin(word)
+        let result = convertToRoman(number)
 
-        expect(result).toBe('algorithmway')
+        expect(result).toBe('XII')
+    })
+
+    it('Should convert a given number to a roman numeral', function () {
+
+        let number = 1023
+
+        let result = convertToRoman(number)
+
+        expect(result).toBe('MXXIII')
     })
 
 })

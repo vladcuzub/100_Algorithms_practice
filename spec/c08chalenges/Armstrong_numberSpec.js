@@ -37,6 +37,4 @@ describe('Armstrong Number', function () {
         expect(result).toBe(false)
     })
 
-   
-
 })

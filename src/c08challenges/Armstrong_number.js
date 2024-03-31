@@ -10,7 +10,6 @@ function armstrongNumber(number) {
     while (temp > 0) {
         temp = Math.floor(temp / 10);
         numberDigits++
-        console.log(numberDigits)
     }
     temp = number
 

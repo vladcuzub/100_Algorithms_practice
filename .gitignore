@@ -5,3 +5,5 @@
 *.iml
 /lib
 .DS_Store
+/.github/workflows
+/lib/jasmine-5.1.1

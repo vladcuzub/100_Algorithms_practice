@@ -1,7 +1,7 @@
 const translatePigLatin = require('../../src/c08challenges/pig_latin')
 
 describe('Pig latin', function () {
-    it('Should return a word with ay and first letter at end when the word begin with a consonant', function () {
+    it('Should return a word with ay at end and first letter move to end when the word begin with a consonant', function () {
 
         let word = 'california'
 

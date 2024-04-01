@@ -1,7 +1,7 @@
 const chunkyArrayInGroups = require('../../src/c08challenges/chunck_monkey')
 
 describe('Chuncky monkey', function () {
-    it('Should split an array into groups the length of size and return them is two dimensional array', function () {
+    it('Should return a 2d array when the array is splited into 2 groups', function () {
 
         let arr = ["a", "b", "c", "d"]
         let size = 2
@@ -11,7 +11,7 @@ describe('Chuncky monkey', function () {
         expect(result).toEqual([["a", "b"], ["c", "d"]])
     })
 
-    it('Should split an array into groups the length of size and return them is two dimensional array', function () {
+    it('Should return a 2d array when the array is splited  2 groups', function () {
 
         let arr = [0, 1, 2, 3, 4, 5]
         let size = 3
@@ -21,7 +21,7 @@ describe('Chuncky monkey', function () {
         expect(result).toEqual([[0, 1, 2], [3, 4, 5]])
     })
 
-    it('Should split an array into groups the length of size and return them is two dimensional array', function () {
+    it('Should return a 2d array when the array is splited into 3', function () {
 
         let arr = [0, 1, 2, 3, 4, 5, 6]
         let size = 3

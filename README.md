@@ -1,6 +1,6 @@
 ![Coverage](./coverage/badge.svg)
 
-# Happy Codding Project
+# Happy Coding Project
 
 ### What is Happy Coding?
 

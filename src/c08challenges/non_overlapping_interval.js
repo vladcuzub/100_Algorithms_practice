@@ -4,29 +4,29 @@ Input: Set : [1, 3], [6, 9]
 New Interval : [2, 5]
 Output: [1, 5], [6, 9]
 */
-function insertInterval(array, newInterval) {
+function insertInterval(intervals, newInterval) {
     let intervalResult = []
     let i = 0;
 
-    while (i < array.length && array[i][1] < newInterval[0]) {
-        intervalResult[intervalResult.length] = array[i];
+    while (i < intervals.length && intervals[i][1] < newInterval[0]) {
+        intervalResult[intervalResult.length] = intervals[i];
         i++;
     }
 
-    while (i < array.length && array[i][0] <= newInterval[1]) {
-        if (array[i][0] < newInterval[0]) {
-            newInterval[0] = array[i][0];
+    while (i < intervals.length && intervals[i][0] <= newInterval[1]) {
+        if (intervals[i][0] < newInterval[0]) {
+            newInterval[0] = intervals[i][0];
         }
-        if (array[i][1] > newInterval[1]) {
-            newInterval[1] = array[i][1];
+        if (intervals[i][1] > newInterval[1]) {
+            newInterval[1] = intervals[i][1];
         }
         i++;
     }
 
     intervalResult[intervalResult.length] = newInterval;
 
-    while (i < array.length) {
-        intervalResult[intervalResult.length] = array[i];
+    while (i < intervals.length) {
+        intervalResult[intervalResult.length] = intervals[i];
         i++;
     }
 
